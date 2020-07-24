@@ -1,0 +1,30 @@
+#heady {
+    // background-color: #fcfcfc !important;
+    // position: fixed;
+    background-color: whitesmoke !important;
+    width: 100%;
+    // top: 0px;
+    // box-shadow: 2px 2px 2px 2px #ccc;
+}
+
+.logo {
+    width: auto;
+    height: 30px;
+}
+
+a {
+    font-size: 17px;
+    font-style: initial;
+    color: #38425B;
+    padding: 20px;
+    border: none;
+    outline:none;
+    background-color: whitesmoke;
+    // background-color: #fcfcfc;
+
+}
+
+#home_btn:hover, #demo_btn:hover, #endear_btn:hover {
+    background-color: white;
+    color: #00AFEF;
+}
