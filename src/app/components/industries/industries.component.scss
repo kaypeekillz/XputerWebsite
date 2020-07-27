@@ -1,0 +1,109 @@
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
+.card {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
+}
+
+#demo_btn {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.btn-clr2 {
+    background-color: #38425B;
+    color: whitesmoke;
+    border-radius: 30px;
+}
+
+.btn-clr2:hover {
+    background-color: white;
+    color: #38425B;
+}
+
+.ind_div {
+    padding-top: 120px;
+    margin: 0px;
+    padding-bottom: 30px;
+    color: #38425B;
+    margin-top: 30px;
+}
+
+.card-img-top {
+    width: auto;
+    margin: 2px;
+    height: 200px;
+}
+
+.demo_btn {
+    background-color: #38425B;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.demo_btn:hover {
+    background-color: whitesmoke;
+    color: #38425B;
+}
+
+
+@media screen and (max-width: 767px) {
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+
+    .ind_div {
+        padding-top: 90px;
+        margin: 0px;
+        margin-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+    }
+
+    .card {
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
+    }
+
+    #demo_btn1 {
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+    }
+    
+    .btn-clr1 {
+        background-color: #38425B;
+        color: whitesmoke;
+        font-size: 7px;
+        padding: 10px;
+        border-radius: 50px;
+        // height: 30px;
+        
+    }
+    
+
+    .btn-clr1:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .demo_btn1 {
+        background-color: #38425B;
+        color: white;
+        // font-size: 20px;
+        border-radius: 20px;
+    }
+    
+    .demo_btn1:hover {
+        background-color: whitesmoke;
+        color: #38425B;
+    }
+
+}

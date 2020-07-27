@@ -10,7 +10,9 @@ export class AppComponent implements OnInit  {
   title = 'xputerWebsite';
 
   ngOnInit() {
-    AOS.init();
+    AOS.init({
+      duration: 1200,
+    });
   }
 }
 

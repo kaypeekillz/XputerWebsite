@@ -1,10 +1,8 @@
 #heady {
-    // background-color: #fcfcfc !important;
-    // position: fixed;
-    background-color: whitesmoke !important;
-    width: 100%;
+    // background-color: whitesmoke !important;
+    // width: 100%;
     // top: 0px;
-    // box-shadow: 2px 2px 2px 2px #ccc;
+    // box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
 }
 
 .logo {
@@ -12,16 +10,15 @@
     height: 30px;
 }
 
-a {
+#home_btn, #demo_btn, #endear_btn {
     font-size: 17px;
     font-style: initial;
     color: #38425B;
     padding: 20px;
     border: none;
     outline:none;
-    background-color: whitesmoke;
+    // background-color: whitesmoke;
     // background-color: #fcfcfc;
-
 }
 
 #home_btn:hover, #demo_btn:hover, #endear_btn:hover {

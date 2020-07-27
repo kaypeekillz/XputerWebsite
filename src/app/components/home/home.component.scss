@@ -61,7 +61,8 @@
     height: 25rem;
     width: 25rem;
     border-radius: 0.5rem;
-    box-shadow: 3px 3px 3px 3px #ccc;
+    // box-shadow: 3px 3px 3px 3px #ccc;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
 }
 
 .bus_col {
@@ -126,7 +127,8 @@
 }
 
 .card {
-    box-shadow: 0.8px 0.8px 0.8px 0.8px #ccc;
+    // box-shadow: 0.8px 0.8px 0.8px 0.8px #ccc;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
 }
 
 #demo_btn {
@@ -191,6 +193,10 @@
   .categories--image {
       width: 200px;
     height: auto;
+  }
+
+  button {
+      border-radius: 30px;
   }
 
 @media screen and (max-width: 767px) {
@@ -259,10 +265,53 @@
         color: #38425B;
     }
 
-    .img-resize_ {
-        // width: 200px;
-        // max-height: 200px;
-        // max-width: 300px;
+    .ind_div {
+        background-color: whitesmoke;
+        // padding-top: 20px;
+        color: #38425B;
+        margin: 0px;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+    }
+
+
+    #demo_btn1 {
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+    }
+    
+    .btn-clr1 {
+        background-color: #38425B;
+        color: whitesmoke;
+        font-size: 7px;
+        padding: 10px;
+        border-radius: 50px;
+        // height: 30px;
+    }
+
+    .btn-clr2 {
+        background-color: #38425B;
+        color: whitesmoke;
+        font-size: 10px;
+        padding: 10px;
+        border-radius: 50px;
+    }
+
+    .btn-clr2:hover {
+        // background-color: #38425B;
+        // color: whitesmoke;
+        // font-size: 10px;
+        // padding: 10px;
+        // border-radius: 50px;
+        color: #38425B;
+    }
+    
+
+    .btn-clr1:hover {
+        background-color: white;
+        color: black;
     }
     
 }

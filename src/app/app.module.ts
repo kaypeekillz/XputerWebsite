@@ -5,25 +5,31 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 // import { mdb-card}
 // MDB Angular Pro
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { ButtonsModule, WavesModule, CardsModule } from 'angular-bootstrap-md'
 import { AppComponent } from './app.component';
 import { HeaderComponentComponent } from './components/header-component/header-component.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
+import { EndearPageComponent } from './components/endear_page/endear-page/endear-page.component';
+import { IndustriesComponent } from './components/industries/industries.component';
+import { NguiInviewModule, NguiListModule, NguiUtilsModule } from '@ngui/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponentComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    EndearPageComponent,
+    IndustriesComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
+    NguiInviewModule, 
+    NguiListModule, 
+    NguiUtilsModule,
     CarouselModule,
-    ButtonsModule,
-    WavesModule,
-    CardsModule,
     MDBBootstrapModule.forRoot()
   ],
   providers: [],
