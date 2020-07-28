@@ -1,0 +1,56 @@
+
+.demo-background {
+    background-image: url("../../../assets/images/form_background.jpg"); 
+    background-color: #cccccc;
+    height: 80rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    background-color: white;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.btn-clr {
+    background-color: #38425B;
+    color: whitesmoke;
+    width: 150px;
+    border-radius: 30px;
+    align-content: center;
+}
+
+.btn-clr:hover {
+    background-color: white;
+    color: #38425B;
+}
+
+.mobile {
+    display: none;
+}
+.desktop {
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    .mobile {
+        display: block;
+        background-color: white;
+        margin-top: 90px; 
+        margin-bottom: 30px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    
+    .desktop {
+        display: none;
+    }
+
+
+}

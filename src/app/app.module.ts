@@ -13,6 +13,8 @@ import { EndearPageComponent } from './components/endear_page/endear-page/endear
 import { IndustriesComponent } from './components/industries/industries.component';
 import { NguiInviewModule, NguiListModule, NguiUtilsModule } from '@ngui/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DemoRequestComponent } from './components/demo-request/demo-request.component';
+import { RecaptchaModule } from 'ng-recaptcha';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     HomeComponent,
     EndearPageComponent,
-    IndustriesComponent
+    IndustriesComponent,
+    DemoRequestComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -30,6 +33,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NguiListModule, 
     NguiUtilsModule,
     CarouselModule,
+    RecaptchaModule,
     MDBBootstrapModule.forRoot()
   ],
   providers: [],

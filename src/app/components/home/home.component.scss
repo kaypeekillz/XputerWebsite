@@ -4,10 +4,6 @@
 
 }
 
-// .banner {
-    // text-align: center;
-// }
-
 #head_text {
     position: absolute;
     font-size: 40px;
@@ -55,7 +51,6 @@
     background-color: whitesmoke;
     color: #38425B;
 }
-
 
 .img-resize {
     height: 25rem;
@@ -138,8 +133,15 @@
 
 #nbplc_logo, #optionsLogo, #tdLogo {
     width: auto;
-    height: 100px;
+    height: 80px;
     margin: auto;
+}
+
+#t4t_logo {
+    width: auto;
+    height: 120px;
+    margin: auto;
+    
 }
 
 #max {

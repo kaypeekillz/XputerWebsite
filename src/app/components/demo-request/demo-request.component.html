@@ -1,0 +1,169 @@
+<div class="desktop demo-background" >
+    
+    <div class="container" style="padding-top: 200px;">
+        <div class="card">
+            <div class="md-form" style="margin-top: 50px;">
+                <input mdbInput type="text" id="form1" class="form-control">
+                <label for="form1" class="">Name</label>
+            </div>
+
+            <div class="row" style="margin-top: 30px; margin-bottom: 20px;">
+                <div class="col-md-6 col-sm-4 justify-content-end">
+                    <select class="browser-default custom-select">
+                        <option selected disabled>Select your title</option>
+                        <option value="1">Sales Person</option>
+                        <option value="2">Manager</option>
+                    </select>
+                </div>
+                
+                <div class="col-md-6 col-sm-4 justify-content-end">
+                    <select class="browser-default custom-select">
+                        <option selected disabled>Select your industry</option>
+                        <option value="1">Public Sector</option>
+                        <option value="2">Banking</option>
+                        <option value="3">Health</option>
+                        <option value="1">Insurance</option>
+                        <option value="2">Education</option>
+                        <option value="3">Trade & Distribution</option>
+                        <option value="1">Manufacturing</option>
+                        <option value="2">Oil & Gas</option>
+                        <option value="3">Entertainment</option>
+                        <option value="1">Agricuture</option>
+                        <option value="2">Professional Services</option>
+                        <option value="3">Architecture</option>
+                        <option value="1">Law</option>
+                        <option value="2">Engineering</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="md-form" style="margin-top: 30px;">
+                <input mdbInput type="text" id="form1" class="form-control">
+                <label for="form1" class="">Email Address</label>
+            </div>
+
+            <div class="row">
+                <div class="md-form col-md-6 col-sm-4 justify-content-start">
+                    <input mdbInput type="text" id="form1" class="form-control">
+                    <label for="form1" style="margin-left: 15px;">Phone</label>
+                </div>
+                
+                <div class="col-md-6 col-sm-4 justify-content-end">
+                    <select class="browser-default custom-select" style="margin-top: 30px;">
+                        <option selected disabled>Number of staffs</option>
+                        <option value="1">1-5</option>
+                        <option value="2">6-20</option>
+                        <option value="3">21-50</option>
+                        <option value="1">51-100</option>
+                        <option value="2">101-500</option>
+                        <option value="3">501-1000</option>
+                        <option value="3">above 1000</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="md-form">
+                <input mdbInput type="text" id="form1" class="form-control">
+                <label for="form1" class="">Address</label>
+            </div>
+
+        <div class="md-form md-outline">
+            <textarea type="text" id="form75" style="height: 150px;" class="form-control md-textarea" rows="3" mdbInput></textarea>
+            <label for="form75">A short description of your companies's activities</label>
+        </div>
+
+        <div class="d-flex justify-content-center p-2">
+            <re-captcha (resolved)="resolved($event)" siteKey="6LfgSrcZAAAAAFx7fKg9b-I5LlpMmTLgiH_wWi1p"></re-captcha>
+        </div>
+
+        <div class="d-flex justify-content-center p-3">
+            <button mdbBtn class="btn-clr">Submit</button>
+        </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- MOBILE VIEW -->
+
+<div class="mobile">
+    <div class="md-form" style="margin-top: 50px;">
+        <input mdbInput type="text" id="form1" class="form-control">
+        <label for="form1" class="">Name</label>
+    </div>
+
+    <div style="margin-top: 30px; margin-bottom: 20px;">
+        <div class="justify-content-end">
+            <select class="browser-default custom-select">
+                <option selected disabled>Select your title</option>
+                <option value="1">Sales Person</option>
+                <option value="2">Manager</option>
+            </select>
+        </div>
+        
+        <div style="margin-top: 20px;">
+            <select class="browser-default custom-select">
+                <option selected disabled>Select your industry</option>
+                <option value="1">Public Sector</option>
+                <option value="2">Banking</option>
+                <option value="3">Health</option>
+                <option value="1">Insurance</option>
+                <option value="2">Education</option>
+                <option value="3">Trade & Distribution</option>
+                <option value="1">Manufacturing</option>
+                <option value="2">Oil & Gas</option>
+                <option value="3">Entertainment</option>
+                <option value="1">Agricuture</option>
+                <option value="2">Professional Services</option>
+                <option value="3">Architecture</option>
+                <option value="1">Law</option>
+                <option value="2">Engineering</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="md-form" style="margin-top: 30px;">
+        <input mdbInput type="text" id="form1" class="form-control">
+        <label for="form1" class="">Email Address</label>
+    </div>
+
+    <div class="md-form">
+        <input mdbInput type="text" id="form1" class="form-control">
+        <label for="form1" class="phone_label">Phone</label>
+    </div>
+    
+    <div>
+        <select class="browser-default custom-select" style="margin-top: 0px;">
+            <option selected disabled>Number of staffs</option>
+            <option value="1">1-5</option>
+            <option value="2">6-20</option>
+            <option value="3">21-50</option>
+            <option value="1">51-100</option>
+            <option value="2">101-500</option>
+            <option value="3">501-1000</option>
+            <option value="3">above 1000</option>
+        </select>
+    </div>
+
+    <div class="md-form">
+        <input mdbInput type="text" id="form1" class="form-control">
+        <label for="form1" class="">Address</label>
+    </div>
+
+    <div class="md-form md-outline">
+        <textarea type="text" id="form75" style="height: 150px;" class="form-control md-textarea" rows="3" mdbInput></textarea>
+        <label for="form75">A short description of your companies's activities</label>
+    </div>
+
+    <div class="d-flex justify-content-center p-2">
+        <re-captcha (resolved)="resolved($event)" siteKey="6LfgSrcZAAAAAFx7fKg9b-I5LlpMmTLgiH_wWi1p"></re-captcha>
+    </div>
+
+    <div class="d-flex justify-content-center p-3">
+        <button style="padding: 7px;" mdbBtn class="btn-clr">Submit</button>
+    </div>
+
+</div>
