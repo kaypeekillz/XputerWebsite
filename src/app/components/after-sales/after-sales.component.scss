@@ -1,0 +1,118 @@
+.mobile {
+    display: none;
+}
+.desktop {
+    display: block;
+}
+
+.img {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+    // position: absolute;
+}
+
+.content {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.eCommerce {
+    color: whitesmoke;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.demo_btn {
+    background-color: whitesmoke;
+    color: #38425B;
+    position: absolute;
+    border-radius: 30px;
+    // text-align: center;
+    top: 600px;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.demo_btn:hover {
+    color: whitesmoke;
+    background-color: #38425B;
+}
+
+.btnn {
+    background-color: #38425B;
+    color: whitesmoke;
+    margin: 50px;
+    border-radius: 30px;
+}
+
+.btnn:hover {
+    background-color: whitesmoke;
+    color: #38425B;
+}
+
+@media screen and (max-width: 767px) {
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+ 
+    .imgmb {
+        padding: 0px;
+        width: 345px;
+        height: 70vh;
+        margin-top: 100px;
+    }
+    
+    .eCommerce {
+        color: whitesmoke;
+        position: absolute;
+        text-align: center;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .demo_btn_mb {
+        background-color: whitesmoke;
+        color: #38425B;
+        position: absolute;
+        border-radius: 30px;
+        // text-align: center;
+        padding: 7px;
+        // padding-left: 8px;
+        // padding-right: 8px;
+        top: 620px;
+        left: 65%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .demo_btn:hover {
+        color: whitesmoke;
+        background-color: #38425B;
+    }
+
+    .contentmb {
+        padding: 20px;
+    }
+    
+    .btnn {
+        background-color: #38425B;
+        color: whitesmoke;
+        margin: 30px;
+        border-radius: 30px;
+    }
+    
+    .btnn:hover {
+        background-color: whitesmoke;
+        color: #38425B;
+    }
+}

@@ -15,6 +15,8 @@ import { NguiInviewModule, NguiListModule, NguiUtilsModule } from '@ngui/common'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DemoRequestComponent } from './components/demo-request/demo-request.component';
 import { RecaptchaModule } from 'ng-recaptcha';
+import { ECommerceComponent } from './components/e-commerce/e-commerce.component';
+import { AfterSalesComponent } from './components/after-sales/after-sales.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,9 @@ import { RecaptchaModule } from 'ng-recaptcha';
     HomeComponent,
     EndearPageComponent,
     IndustriesComponent,
-    DemoRequestComponent
+    DemoRequestComponent,
+    ECommerceComponent,
+    AfterSalesComponent
   ],
   imports: [
     BrowserAnimationsModule,
