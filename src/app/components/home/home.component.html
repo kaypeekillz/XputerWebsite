@@ -1,47 +1,31 @@
-<!-- <div style="border: 1px solid red;"> -->
 
-<!-- <app-header-component></app-header-component> -->
-
-<!-- BANNER SECTION -->
-    <div class="mobile">
-        <div>
-            <img class="img" src="assets/images/del.jpg" style="height: 100vh;">
-
-            <div class="banner_textm">
-           
-                <h3 class="animate__animated animate__backInDown" style="text-align: center;">
-                    Empowering fast-growing and emerging businesses with Information Technology 
-                    Solutions
-                </h3>
-    
-                <p class="animate__animated animate__backInUp" style="text-align: center;">
-                    Our competence and competitive strength in IT solutions lie in our 
-                    seasoned and well-qualified repertoire of professionals
-                </p>
-    
-            </div>
-        </div>
-    </div>
-
-<div class="banner desktop">
+<div class="banner">
     <div>
-        <img class="img" src="assets/images/del.jpg">
+        <mdb-carousel [animation]="'slide'">
+            <mdb-carousel-item class="carousel-relative">
+              <div class="bg-opacity"></div>
+              <img class="d-block w-100 img-absolute img-hv80" src="assets/images/banner1.jpg" alt="First slide">
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+              <img class="d-block w-100 img-hv80" src="assets/images/del.jpg" alt="Second slide">
+            </mdb-carousel-item>
+            <mdb-carousel-item class="carousel-relative">
+                <div class="bg-opacity"></div>
+                <img class="d-block w-100 img-absolute img-hv80" src="assets/images/banner3.jpg" alt="First slide">
+              </mdb-carousel-item>
+        </mdb-carousel>
 
         <div class="banner_text">
-        
-            <h2 class="animate__animated animate__backInDown">
+            <h1 class="animate__animated animate__backInDown">
                 Empowering fast-growing and emerging businesses with Information Technology 
                 Solutions
-            </h2>
-
-            <p class="animate__animated animate__backInUp">
+            </h1>
+            <p class="animate__animated animate__backInUp" style="font-weight: 100;">
                 Our competence and competitive strength in IT solutions lie in our 
                 seasoned and well-qualified repertoire of professionals
             </p>
-
         </div>
     </div>
-
 </div>
 
 <!-- Business process section -->
@@ -70,7 +54,9 @@
                 <ngui-inview class="col-md-6 col-sm-12">
                     <div *ngIf> 
                         <div class="animate__animated animate__backInRight">
-                            <img src="assets/images/workflow.jpg" class="img-resize">
+                            <div class="m-3">
+                                <img src="assets/images/workflow.jpg" class="img-resize">
+                            </div>
                         </div>
                     </div>
                 </ngui-inview>
@@ -102,14 +88,13 @@
 <div class="bus_div2 desktop">
     <div class="container hv80 text-center d-flex justify-content-center align-items-center">
         <div class="row">
-            <!-- <div class="col-md-6 col-sm-12 animate__animated animate__backInRight">
-                <img src="assets/images/hands.jpg" class="img-resize">
-            </div> -->
 
             <ngui-inview class="col-md-6 col-sm-12">
                 <div *ngIf> 
                     <div class="col-md-6 col-sm-12 animate__animated animate__backInLeft">
-                        <img src="assets/images/hands.jpg" class="img-resize">
+                        <div class="m-3">
+                            <img src="assets/images/hands.jpg" class="img-resize">
+                        </div>
                     </div>
                 </div>
             </ngui-inview>
@@ -131,21 +116,6 @@
                     </div>
                 </div>
             </ngui-inview>
-            <!-- <div class="col-md-6 col-sm-12 bus_col animate__animated animate__backInLeft">
-                <h3>Endear our Flagship Workflow Solution</h3>
-                <p>
-                    Cohesion is a vital requirement of a business eager to meet its target 
-                    and achieve sustainable growth. Essential to a business of any appreciable 
-                    size are systems for defining, amending and enforcing business processes. 
-                    The operational arm that meets the business obligations is of great importance, 
-                    while the information flow within the operations team is also critical. 
-                    If these three factors fall out of sync, as they often do, profitability and 
-                    sustainable growth is greatly impacted.
-                </p>
-                <button mdbBtn routerLink="/endear-page" class="btn-clr2">Features</button>
-            </div> -->
-
-            
             
         </div>
     
@@ -172,19 +142,6 @@
     </div> 
 </div>
 
-<!-- <div> 
-    <ngui-inview>
-        <div *ngIf> 
-            
-            <p class="animate__animated animate__bounce mt-5">
-                Cohesion is a vital requirement of a business eager to meet its target and achieve sustainable growth. Essential to a business of any appreciable size are systems for defining, 
-                amending and enforcing business processes. The operational arm that meets the business obligations is of great importance, while the information flow within the operations team is also critical. If these three factors fall out of sync, as they often do, profitability and sustainable growth is greatly impacted. 
-            </p>
-     </div>
- </ngui-inview> 
-</div> -->
-
-<!-- Flexible System Integration section -->
 
 <div class="sys_div hv70 desktop">
     <div class="container">
@@ -331,50 +288,45 @@
 
 </div>
 
-
 <div class="hv60">
-    <div class="container">
-        <h2 class="d-flex justify-content-center p-4" id="patners_text">Patners</h2>
-    
-        <div class="p-5">
-            <owl-carousel-o [options]="customOptions">
-                <ng-template carouselSlide><img src="assets/images/ZinoxLogo.png"></ng-template> 
-                <ng-template carouselSlide><img src="assets/images/spring-xpress.png" id="tdLogo"></ng-template>
-                <ng-template carouselSlide><img src="assets/images/kongaLogo.png"></ng-template> 
-                <ng-template carouselSlide><img src="assets/images/t4t-logo.png" id="t4t_logo"></ng-template>
-                <ng-template carouselSlide><img src="assets/images/TDlogo.png" id="tdLogo"></ng-template>  
-                <ng-template carouselSlide><img src="assets/images/optionsLogo.png" id="optionsLogo"></ng-template> 
-                <ng-template carouselSlide><img src="assets/images/nbplc-logo.png" id="nbplc_logo"></ng-template>  
-            </owl-carousel-o>
-        </div>
+    <div class="container p-5 partners-padding">
+        <h3 class="d-flex justify-content-center mb-5" id="patners_text">Patners</h3>
 
-        <!-- <div class="mt-4 p-relative">
-            <img  src="assets/images/next-arrow.png" class="py-2 px-3" id="right-btn"
-              [hidden]="hiderightslider" (click)="scrollRight()"/>
-            <div  id="myDIVM"> 
-              <div id="contentM">
-                <div class="">
-                  <div *ngFor="let cat of slidesStore; let i = index"
-                    class="innerContent p-3 col-lg-2 col-md-2 col-sm-12 cat--div"
-                    >
-                    <div *ngIf="i <= 9">
-                      <img class="categories--image" src="{{ cat.src }}" alt=""/>
-                      <div class="centered">
-                        <p>{{ cat.name }}</p>
-                      </div>
-                    </div>
-                  </div>
+          <mdb-carousel [animation]="'slide'" [isControls]="false">
+            <mdb-carousel-item>
+                <div class="w-100">
+                    <img src="assets/images/ZinoxLogo.png" class="carousel_item">
+                    <img src="assets/images/kongaLogo.png" class="carousel_item middle_img_margin">
+                    <img src="assets/images/spring-xpress.png" class="carousel_item">
                 </div>
-              </div>
-            </div>
-            <button class="py-2 px-3" id="left-btn" [hidden]="hideleftslider" (click)="scrollLeft()">left</button>
-            <img src="assets/images/prev-arrow.png" class="py-2 px-3" id="left-btn"
-              [hidden]="hideleftslider" (click)="scrollLeft()" />
-          </div> -->
-    
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+                <div class="w-100">
+                    <div class="d-inline-block w-25">
+                        <img id="t4t-logo" src="assets/images/t4t-logo.png" class="carousel_item">
+                    </div>
+                    <div class="d-inline-block w-50 text-center">
+                        <img id="td-logo" src="assets/images/TDlogo.png" class="carousel_item">
+                    </div>
+                    <div class="d-inline-block w-25">
+                        <img src="assets/images/1st-news-logo.png" class="carousel_item"> 
+                    </div>
+                </div>
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+                <div class="w-100">
+                    <div class="d-inline-block w-25">
+                        <img src="assets/images/itec-logo.png" class="carousel_item">
+                    </div>
+                    <div class="d-inline-block w-50 text-center">
+                        <img id="options-logo" src="assets/images/optionsLogo.png" class="carousel_item middle_img_margin">
+                    </div>
+                    <div class="d-inline-block w-25 d">
+                        <img id="nbplc-logo" src="assets/images/nbplc-logo.png" class="carousel_item">  
+                    </div>
+                </div>          
+            </mdb-carousel-item>
+          </mdb-carousel>
+
     </div>
 </div>
-
-<!-- <app-footer></app-footer> -->
-
-<!-- </div> -->
