@@ -51,6 +51,10 @@
 @media screen and (max-width: 767px) {
     .mobile {
         display: block;
+        font-size: 14px;
+    }
+    .mobile, h3 {
+        font-size: 16px;
     }
     .desktop {
         display: none;
@@ -60,7 +64,7 @@
         color: whitesmoke;
         position: absolute;
         // text-align: center;
-        top: 35%;
+        top: 25%;
         left: 35%;
         transform: translate(-25%, -25%);
     }
@@ -98,6 +102,5 @@
     .img {
         width: 100%;
         height: auto;
-        
     }
 }

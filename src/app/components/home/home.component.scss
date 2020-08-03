@@ -1,7 +1,32 @@
-.img {
-    width: 100%;
-    height: auto;
 
+.carousel_item {
+    width: 18rem;
+    height: 5rem;
+}
+
+.middle_img_margin {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#t4t-logo {
+    width: 10rem;
+}
+
+#td-logo {
+    width: 10rem;
+}
+
+#options-logo {
+    width: 5rem;
+}
+
+#nbplc-logo {
+    width: 5rem;
+}
+
+.partners-padding {
+    padding-bottom: 4rem !important;
 }
 
 #head_text {
@@ -27,9 +52,24 @@
     color: whitesmoke;
     position: absolute;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 40%;
+    padding: 0 10rem;
+    // margin-bottom: -20rem;
+    
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+}
+
+.carousel-relative {
+    position: relative;
+}
+
+div.bg-opacity {
+    opacity: .7;
+    background-color: black;
+    position: absolute;
+    left: 0; top: 0; min-height: 100vh; width: 100%;
+    // left: 0; top: 0; height: 256px; width: 256px;
 }
 
 .workflow_image {
@@ -39,8 +79,15 @@
     // padding-top: 4rem;
 }
 
-.hv80 {
-    height: 80vh;
+.banner {
+    min-height: 100vh;
+    background-color: red;
+    // height: 80vh;
+}
+
+.img-hv80 {
+    // min-height: 100vh;
+    max-height: 100vh;
 }
 
 .bus_div {
@@ -123,7 +170,8 @@
 
 .card {
     // box-shadow: 0.8px 0.8px 0.8px 0.8px #ccc;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    color: #38425B !important;
 }
 
 #demo_btn {
@@ -204,6 +252,15 @@
     .mobile {
         display: block;
     }
+    
+    .mobile, h3 {
+        font-size: 20px;
+    }
+
+    .mobile, p {
+        font-size: 14px !important;
+    }
+
     .desktop {
         display: none;
     }
@@ -316,3 +373,33 @@
     }
     
 }
+
+@media (max-width: 576px) { 
+    .banner {
+        min-height: 50vh;
+    }
+    .img-hv80 {
+        height: 50vh;
+    }
+    .banner_text {
+        position: absolute;
+        text-align: center;
+        top: 20%;
+        padding: 0 4rem;
+    }
+    .banner_text, h1 {
+        font-size: 20px !important;
+    }
+    .banner_text, p {
+        font-size: 12px !important;
+        font-weight: 100;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+ }
