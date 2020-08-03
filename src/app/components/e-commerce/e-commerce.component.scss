@@ -10,7 +10,7 @@
     padding-right: 200px;
     padding-bottom: 20px;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     margin-top: 100px;
     // position: absolute;
 }
@@ -29,14 +29,17 @@
     transform: translate(-50%, -50%);
 }
 
+.imaging {
+    position: relative;
+}
+
 .demo_btn {
     background-color: whitesmoke;
     color: #38425B;
     position: absolute;
     border-radius: 30px;
-    // text-align: center;
-    top: 600px;
-    left: 65%;
+    bottom: 1rem;
+    left: 70%;
     transform: translate(-50%, -50%);
 }
 
