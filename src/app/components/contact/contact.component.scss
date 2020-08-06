@@ -1,0 +1,65 @@
+.container, .cards_top {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #38425B;
+}
+
+.send_btn {
+    text-align: left;
+}
+
+.send_btn button {
+    margin-top: 20px;
+    background-color: #38425B;
+    color: whitesmoke;
+    font-weight: bold;
+    width: 150px;
+    border-radius: 30px;
+}
+
+.send_btn button:hover {
+    background-color: whitesmoke;
+    color: #38425B;
+}
+
+.name {
+    padding-right: 40px;
+}
+
+.name label {
+    padding-left: 5px;
+}
+
+.email label {
+    padding-left: 5px;
+}
+
+
+.phone {
+    padding-right: 40px;
+}
+
+.phone label {
+    padding-left: 5px;
+}
+
+.subject label {
+    padding-left: 5px;
+}
+
+.contact_card {
+    margin-top: 10px;
+    // margin-left: 5px;
+    // margin-right: 2px;
+    padding: 10px;
+    // height: 80px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.logo {
+    color: #38425B;
+    padding-right: 20px;
+    font-size: 20px;
+}

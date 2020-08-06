@@ -31,47 +31,52 @@
 <!-- Business process section -->
 
 <div class="bus_div desktop">
-    <div class="container hv80 text-center d-flex justify-content-center align-items-center">
+    <div class="container">
         <div class="row">
-            <!-- <div class="col-md-6 col-sm-12">  -->
-                <ngui-inview class="col-md-6 col-sm-12">
+                <ngui-inview class="col-md-6 col-sm-12 col-lg-6">
                     <div *ngIf> 
-                        <div class="bus_col animate__animated animate__backInLeft">
-                            <h3>Business process automation is our core competence</h3>
-                            <p>
-                                For over 15 years we have dramatically improved the competetiveness of our 
-                                clients by focusing on workflow automation, system integration and analytics.
-                                We are perfectly positioned to undertake software projects of any form or 
-                                magnitude, all developed to world-class standards and benchmarks.
-                            </p>
-                            <button mdbBtn routerLink="demo-request" class="btn-clr">Contact Us</button>
+                        <div class="animate__animated animate__backInLeft">
+                            <h1 class="building">
+                                <span style="color: yellowgreen;">ALWAYS</span>
+                                 BUILDING 
+                                <span style="color: turquoise;">TO SCALE</span>
+                                <!-- TO SCALE -->
+                            </h1>
                         </div>
                     </div>
                 </ngui-inview>
-            <!-- </div> -->
 
-            <!-- <div class="col-md-6 col-sm-12">  -->
-                <ngui-inview class="col-md-6 col-sm-12">
+                <ngui-inview class="col-md-6 col-sm-12 col-lg-6">
                     <div *ngIf> 
-                        <div class="animate__animated animate__backInRight">
-                            <div class="m-3">
-                                <img src="assets/images/workflow.jpg" class="img-resize">
+                        <div class="animate__animated animate__backInRight mt-3">
+                            <div>
+                                <h3 >Business process automation is our core competence</h3>
+                                <p>
+                                    For over 15 years we have dramatically improved the competetiveness of our 
+                                    clients by focusing on workflow automation, system integration and analytics.
+                                    We are perfectly positioned to undertake software projects of any form or 
+                                    magnitude, all developed to world-class standards and benchmarks.
+                                </p>
+                                <button mdbBtn routerLink="/contact-us" class="btn-clr">Contact Us</button>
                             </div>
                         </div>
                     </div>
                 </ngui-inview>
-            <!-- </div> -->
         </div>
     
     </div>
 </div>
 
-<div class="sec_div mobile">
-    <div class="col-12 animate__animated animate__backInRight">
-        <!-- <img src="assets/images/hands.jpg" class="img-resize_"> -->
+<div class="bus_div2 mobile" style="background-color: white;">
+    <div class="animate__animated animate__backInRight">
+        <h1 style="font-size: 60px;">
+            <span style="color: yellowgreen;">ALWAYS</span>
+             BUILDING 
+            <span style="color: turquoise;">TO SCALE</span>
+        </h1>
     </div>
 
-    <div id="sec_div_inner" class="col-12 bus_col animate__animated animate__backInLeft">
+    <div id="sec_div_inner" class="bus_col animate__animated animate__backInLeft">
         <h3 >Business process automation is our core competence</h3>
         <p>
             For over 15 years we have dramatically improved the competetiveness of our 
@@ -79,19 +84,19 @@
             We are perfectly positioned to undertake software projects of any form or 
             magnitude, all developed to world-class standards and benchmarks.
         </p>
-        <button mdbBtn routerLink="demo-request" class="btn-clr2">Contact Us</button>
+        <button mdbBtn routerLink="contact-us" class="btn-clr2">Contact Us</button>
     </div> 
 </div>
 
 <!-- Flagship Workflow section -->
 
 <div class="bus_div2 desktop">
-    <div class="container hv80 text-center d-flex justify-content-center align-items-center">
+    <div class="container">
         <div class="row">
 
-            <ngui-inview class="col-md-6 col-sm-12">
+            <ngui-inview class="col-md-6 col-sm-12 col-lg-6">
                 <div *ngIf> 
-                    <div class="col-md-6 col-sm-12 animate__animated animate__backInLeft">
+                    <div class="animate__animated animate__backInLeft">
                         <div class="m-3">
                             <img src="assets/images/hands.jpg" class="img-resize">
                         </div>
@@ -99,9 +104,9 @@
                 </div>
             </ngui-inview>
 
-            <ngui-inview class="col-md-6 col-sm-12">
+            <ngui-inview class="col-md-6 col-sm-12 col-lg-6 ">
                 <div *ngIf> 
-                    <div class="bus_col animate__animated animate__backInRight">
+                    <div class="animate__animated animate__backInRight mt-3">
                         <h3>Endear our Flagship Workflow Solution</h3>
                         <p>
                             Cohesion is a vital requirement of a business eager to meet its target 
@@ -123,11 +128,7 @@
 </div>
 
 <div class="bus_div2 mobile">
-    <div class="col-md-12 animate__animated animate__backInRight">
-        <!-- <img src="assets/images/hands.jpg" class="img-resize2"> -->
-    </div>
-
-    <div class="col-md-12 bus_col animate__animated animate__backInLeft">
+    <div class="bus_col animate__animated animate__backInLeft">
         <h3>Endear our Flagship Workflow Solution</h3>
         <p>
             Cohesion is a vital requirement of a business eager to meet its target 
@@ -197,7 +198,7 @@
 
 <!-- Industries served section -->
 
-<div class="ind_div hv100 desktop" style="padding-top: 20px;">
+<div class="ind_div hv100 desktop" style="padding-top: 20px;" id="industriesCard">
     <div class="container">
         <div class="col-md-12 col-sm-12 text-center" id="Industries">
             <h3>Industries Served</h3>
@@ -215,8 +216,8 @@
                             efficiency across online and brick and mortar stores.
                         </p>
                         <div class="d-flex justify-content-center">
-                            <button mdbBtn routerLink="/e-commerce" class="btn-clr2">Case Study</button>
-                            <button mdbBtn routerLink="/demo-request" class="btn-clr2" id="demo_btn">Demo</button>
+                            <button mdbBtn routerLink="/e-commerce" class="card_btn">Case Study</button>
+                            <button mdbBtn routerLink="/demo-request" class="card_btn demo">Demo</button>
                         </div>
                     
                     </div>
@@ -227,14 +228,14 @@
                 <div class="card" style="width: 25rem; margin-bottom: 10px;">
                     <img src="assets/images/aftersales-dark.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h4 class="card-title text-center">after-sales service</h4>
+                      <h4 class="card-title text-center">After-Sales Service</h4>
                         <p class="card-text text-center">
                             Customer Experience improved greatly with ease of tracking support 
                             ticket across stages and locations.
                         </p>
-                        <div class="d-flex justify-content-center">
-                            <button mdbBtn routerLink="/after-sales" class="btn-clr2">Case Study</button>
-                            <button mdbBtn routerLink="/demo-request" class="btn-clr2" id="demo_btn">Demo</button>
+                        <div class="d-flex justify-content-center btn_div">
+                            <button mdbBtn routerLink="/after-sales" class="card_btn">Case Study</button>
+                            <button mdbBtn routerLink="/demo-request" class="card_btn demo">Demo</button>
                         </div>
                
                     </div>
@@ -245,7 +246,7 @@
 </div>
 
 
-<div class="ind_div hv100 mobile">
+<div class="ind_div hv100 mobile" id="industriesCard">
     <div class="text-center" id="Industries">
         <h3>Industries Served</h3>
         <p>We have provided solutions for these industries and more.</p>
@@ -272,7 +273,7 @@
     <div class="card" style="width: 25rem; margin-bottom: 10px;">
         <img src="assets/images/aftersales-dark.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-            <h4 class="card-title text-center">after-sales service</h4>
+            <h4 class="card-title text-center">After-Sales Service</h4>
             <p class="card-text text-center">
                 Customer Experience improved greatly with ease of tracking support 
                 ticket across stages and locations.
@@ -288,45 +289,93 @@
 
 </div>
 
-<div class="hv60">
+<!-- <div class="hv60">
     <div class="container p-5 partners-padding">
-        <h3 class="d-flex justify-content-center mb-5" id="patners_text">Patners</h3>
+        <h3 class="d-flex justify-content-center mb-5" id="patners_text">Partners</h3>
 
           <mdb-carousel [animation]="'slide'" [isControls]="false">
             <mdb-carousel-item>
-                <div class="w-100">
-                    <img src="assets/images/ZinoxLogo.png" class="carousel_item">
-                    <img src="assets/images/kongaLogo.png" class="carousel_item middle_img_margin">
-                    <img src="assets/images/spring-xpress.png" class="carousel_item">
+                <div class="w-100 d-flex justify-content-center">
+
+                    <img src="assets/images/ZinoxLogo.png" class="w-25 carousel_item">
+                    <img src="assets/images/kongaLogo.png" class="w-25 carousel_item middle_img_margin">
+                    <img src="assets/images/spring-xpress.png" class="w-25 carousel_item">
                 </div>
             </mdb-carousel-item>
+
             <mdb-carousel-item>
-                <div class="w-100">
-                    <div class="d-inline-block w-25">
-                        <img id="t4t-logo" src="assets/images/t4t-logo.png" class="carousel_item">
-                    </div>
-                    <div class="d-inline-block w-50 text-center">
-                        <img id="td-logo" src="assets/images/TDlogo.png" class="carousel_item">
-                    </div>
-                    <div class="d-inline-block w-25">
-                        <img src="assets/images/1st-news-logo.png" class="carousel_item"> 
-                    </div>
+                <div class="w-100 d-flex justify-content-center">
+                    <img id="t4t-logo" src="assets/images/t4t-logo.png" class="w-25 carousel_item">
+                    <img id="td-logoz" src="assets/images/TDlogo.png" class="w-25 carousel_item middle_img_margin">
+                    <img src="assets/images/1st-news-logo.png" class="w-25 carousel_item"> 
                 </div>
             </mdb-carousel-item>
+            
             <mdb-carousel-item>
-                <div class="w-100">
-                    <div class="d-inline-block w-25">
-                        <img src="assets/images/itec-logo.png" class="carousel_item">
-                    </div>
-                    <div class="d-inline-block w-50 text-center">
-                        <img id="options-logo" src="assets/images/optionsLogo.png" class="carousel_item middle_img_margin">
-                    </div>
-                    <div class="d-inline-block w-25 d">
-                        <img id="nbplc-logo" src="assets/images/nbplc-logo.png" class="carousel_item">  
-                    </div>
-                </div>          
+                <div class="w-100 d-flex justify-content-center">
+                    <img id="options-logo" src="assets/images/optionsLogo.png" class=" carousel_item">
+                    <img src="assets/images/itec-logo.png" class=" carousel_item middle_img_margin">
+                    <img id="nbplc-logo" src="assets/images/nbplc-logo.png" class=" carousel_item">
+                </div>
             </mdb-carousel-item>
           </mdb-carousel>
 
     </div>
+</div> -->
+
+<div class="mini_div">
+    <div class="col-md-12 col-sm-12 col-lg-12 text-center patner">
+        <h3>Our Partners</h3>
+        <p>Here are some of the organisations we have a strong relationship with.</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 carding">
+          <div class="card card-body">
+            <img src="assets/images/ZinoxLogo.png" class="pat_logo">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 carding">
+            <div class="card card-body">
+                <img src="assets/images/kongaLogo.png" class="pat_logo">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 carding">
+            <div class="card card-body">
+                <img src="assets/images/spring-xpress.png" class="pat_logo">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 carding">
+            <div class="card card-body">
+                <img id="t4t-logo" src="assets/images/t4t-logo.png" class="pat_logo">
+            </div>
+          </div>
+
+    </div>
+    <!-- SECOND LINE OF PATENERS -->
+
+    <div class="row second_row">
+        <div class="col-lg-3 col-md-3 col-sm-3 carding">
+          <div class="card card-body">
+            <img src="assets/images/TDlogo.png" class="pat_logo">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 carding">
+            <div class="card card-body">
+                <img src="assets/images/1st-news-logo.png" class="pat_logo"> 
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 carding">
+            <div class="card card-body">
+                <img id="nbplc-logo" src="assets/images/nbplc-logo.png" class="pat_logo">
+                <!-- <img id="options-logo" src="assets/images/optionsLogo.png"> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 carding">
+            <div class="card card-body">
+                <img src="assets/images/itec-logo.png" class="pat_logo">
+            </div>
+          </div>
+
+    </div>
+
 </div>

@@ -1,0 +1,73 @@
+.main {
+    background-image: url("../../../assets/images/code.png");
+    height: 400px;
+    width: 100%;
+}
+
+.text {
+    padding: 200px; 
+    z-index: 999;
+    position: absolute;
+    color: whitesmoke;
+}
+
+.main_div {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.bg-opacity {
+    opacity: .8;
+    background-color: black;
+    position: absolute;
+    left: 0; top: 0; min-height: 400px; width: 100%;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    color: #38425B;
+}
+
+.each_list {
+    padding: 10px;
+    // margin: 0px !important;
+}
+
+.word {
+    padding-left: 10px;
+}
+
+.contact_btn {
+    background-color: #38425B;
+    color: whitesmoke;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.contact_btn:hover {
+    background-color: whitesmoke;
+    color: #38425B;
+    // color: black;
+}
+
+.parent {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 600px){
+    .container {
+        padding: 30px;
+        color: #38425B;
+    }
+
+    .text {
+        padding-left: 30px; 
+        padding-top: 150px;
+        z-index: 999;
+        position: absolute;
+        color: whitesmoke;
+    }
+}

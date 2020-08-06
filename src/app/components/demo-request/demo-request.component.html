@@ -38,7 +38,8 @@
             </div>
 
             <div class="md-form" style="margin-top: 30px;">
-                <input mdbInput type="text" id="form1" class="form-control">
+                <input mdbInput pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" 
+                    type="email" id="form1" required class="form-control">
                 <label for="form1" class="">Email Address</label>
             </div>
 

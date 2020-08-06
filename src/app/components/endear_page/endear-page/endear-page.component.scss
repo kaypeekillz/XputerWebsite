@@ -1,14 +1,7 @@
 .img {
     width: 100%;
-    height: auto;
-
+    height: 95vh;
 }
-
-// .banner {
-    // text-align: center;
-// }
-
-
 
 .banner_text {
     color: whitesmoke;
@@ -17,23 +10,31 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 
 .mobile {
     display: none;
 }
+
 .desktop {
     display: block;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-  button {
-      border-radius: 30px;
-  }
+button {
+    border-radius: 30px;
+}
 
 #graphWorkFlow {
     width: 200px;
     height: 200px;
+}
+
+.endear {
+    width: 150px; 
+    height: 150px;
 }
 
 .graph {
@@ -41,10 +42,24 @@
     color: #38425B;
     font-size: 20px;
     // height: 70vh;
-    padding: 120px;
-    font-size: 1.5em;
-    line-height: 1.4em;
+    padding: 70px;
+    font-size: 14px;
+    // line-height: 1.8em;
     font-family: "Roboto", sans-serif;
+}
+
+h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 25px;
+}
+
+.graph p {
+    text-align: justify;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
 }
 
 
@@ -52,10 +67,18 @@
     .mobile {
         display: block;
         font-size: 14px;
+        font-family: Helvetica, Arial, sans-serif;
     }
     .mobile, h3 {
-        font-size: 16px;
+        font-size: 22px;
+        font-family: Helvetica, Arial, sans-serif;
     }
+
+    .mobile, p {
+        font-size: 16px;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
     .desktop {
         display: none;
     }
@@ -104,3 +127,43 @@
         height: auto;
     }
 }
+
+@media (min-width: 768px) and (max-width: 991px) { 
+    .top {
+        max-height: 70vh;
+    }
+
+    .img {
+        height: 70vh;
+    }
+
+    .banner_text {
+        top: 40%;
+    }
+
+    .endear {
+        width: 100px; 
+        height: 100px;
+    }
+
+    .graph {
+        padding: 40px;
+    }
+
+    .graph h3{
+        font-size: 20px;
+    }
+
+    .graph p {
+        font-size: 16px;
+    }
+
+    .last p {
+        font-size: 14px;
+    }
+
+    .last h4{
+        font-size: 16px;
+    }
+
+ }

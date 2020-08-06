@@ -3,6 +3,7 @@
 }
 .desktop {
     display: block;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .img {
@@ -63,44 +64,49 @@
 @media screen and (max-width: 767px) {
     .mobile {
         display: block;
+        font-family: Helvetica, Arial, sans-serif;
     }
+
     .desktop {
         display: none;
     }
- 
-    .imgmb {
-        padding: 0px;
-        width: 345px;
-        height: 70vh;
-        margin-top: 100px;
+
+    .the_img {
+        width: 100%;
+        max-height: 100vh;
+        margin-top: 80px;
+        // position: absolute;
     }
     
-    .eCommerce {
+    .img_div {
+        position: relative;
+        width: 100%;
+        max-height: 100vh;
+    }
+
+    .txt {
         color: whitesmoke;
         position: absolute;
         text-align: center;
-        top: 200px;
+        top: 150px;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    
-    .demo_btn_mb {
+
+    .the_btn {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        transform: translate(-50%, -50%);
         background-color: whitesmoke;
         color: #38425B;
-        position: absolute;
         border-radius: 30px;
-        // text-align: center;
         padding: 7px;
-        // padding-left: 8px;
-        // padding-right: 8px;
-        top: 620px;
-        left: 65%;
-        transform: translate(-50%, -50%);
     }
-    
-    .demo_btn:hover {
-        color: whitesmoke;
-        background-color: #38425B;
+
+    .the_btn:hover {
+        background-color: whitesmoke;
+        color: #38425B;
     }
 
     .contentmb {
@@ -118,4 +124,41 @@
         background-color: whitesmoke;
         color: #38425B;
     }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .content {
+        padding: 0px !important;
+    }
+
+    .img {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        margin: 0px !important;
+        padding-top: 90px;
+        min-height: 80vh;
+        max-height: 80vh;
+    }
+
+    .demo_btn {
+        background-color: whitesmoke;
+        color: #38425B;
+        position: absolute;
+        border-radius: 30px;
+        bottom: 1rem;
+        left: 80%;
+        transform: translate(-50%, -50%);
+    }
+
+    .eCommerce {
+        color: whitesmoke;
+        position: absolute;
+        text-align: center;
+        top: 150px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
 }

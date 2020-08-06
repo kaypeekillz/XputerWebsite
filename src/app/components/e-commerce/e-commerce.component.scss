@@ -10,7 +10,7 @@
     padding-right: 200px;
     padding-bottom: 20px;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     margin-top: 100px;
     // position: absolute;
 }
@@ -29,17 +29,13 @@
     transform: translate(-50%, -50%);
 }
 
-.imaging {
-    position: relative;
-}
-
 .demo_btn {
     background-color: whitesmoke;
     color: #38425B;
     position: absolute;
     border-radius: 30px;
-    bottom: 1rem;
-    left: 70%;
+    top: 42rem;
+    left: 65%;
     transform: translate(-50%, -50%);
 }
 
@@ -60,47 +56,13 @@
     color: #38425B;
 }
 
+
 @media screen and (max-width: 767px) {
     .mobile {
         display: block;
     }
     .desktop {
         display: none;
-    }
- 
-    .imgmb {
-        padding: 0px;
-        width: 345px;
-        height: 70vh;
-        margin-top: 100px;
-    }
-    
-    .eCommerce {
-        color: whitesmoke;
-        position: absolute;
-        text-align: center;
-        top: 200px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .demo_btn_mb {
-        background-color: whitesmoke;
-        color: #38425B;
-        position: absolute;
-        border-radius: 30px;
-        // text-align: center;
-        padding: 7px;
-        // padding-left: 8px;
-        // padding-right: 8px;
-        top: 620px;
-        left: 65%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .demo_btn:hover {
-        color: whitesmoke;
-        background-color: #38425B;
     }
 
     .contentmb {
@@ -118,4 +80,70 @@
         background-color: whitesmoke;
         color: #38425B;
     }
+
+
+    .the_img {
+        width: 100%;
+        max-height: 100vh;
+        margin-top: 80px;
+    }
+    
+    .img_div {
+        position: relative;
+        width: 100%;
+        max-height: 100vh;
+    }
+
+    .txt {
+        color: whitesmoke;
+        position: absolute;
+        text-align: center;
+        top: 150px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .the_btn {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        transform: translate(-50%, -50%);
+        background-color: whitesmoke;
+        color: #38425B;
+        border-radius: 30px;
+        padding: 7px;
+    }
+
+    .the_btn:hover {
+        background-color: whitesmoke;
+        color: #38425B;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .content {
+        padding: 0px !important;
+    }
+
+    .img {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        margin: 0px !important;
+        padding-top: 90px;
+        min-height: 60vh;
+        max-height: 60vh;
+    }
+
+    .demo_btn {
+        background-color: whitesmoke;
+        color: #38425B;
+        position: absolute;
+        border-radius: 35px;
+        top: 35rem;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
+    
 }

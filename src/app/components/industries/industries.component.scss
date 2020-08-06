@@ -4,6 +4,7 @@
 
 .desktop {
     display: block;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .card {
@@ -56,6 +57,7 @@
 @media screen and (max-width: 767px) {
     .mobile {
         display: block;
+        font-family: Helvetica, Arial, sans-serif;
     }
     .desktop {
         display: none;
@@ -104,6 +106,28 @@
     .demo_btn1:hover {
         background-color: whitesmoke;
         color: #38425B;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .btn-clr2 {
+        padding: 10px;
+    }
+
+    .second {
+        padding-top: 20px;
+    }
+
+    .ind_div {
+        // border: 2px solid red;
+        margin-top: 0px !important;
+        padding-top: 12% !important;
+    }
+
+    .dw {
+        // border: 2px solid red;
+        // padding-bottom: 5px !important;
     }
 
 }

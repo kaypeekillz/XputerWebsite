@@ -17,6 +17,8 @@ import { DemoRequestComponent } from './components/demo-request/demo-request.com
 import { RecaptchaModule } from 'ng-recaptcha';
 import { ECommerceComponent } from './components/e-commerce/e-commerce.component';
 import { AfterSalesComponent } from './components/after-sales/after-sales.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ServicesComponent } from './components/services/services.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,9 @@ import { AfterSalesComponent } from './components/after-sales/after-sales.compon
     IndustriesComponent,
     DemoRequestComponent,
     ECommerceComponent,
-    AfterSalesComponent
+    AfterSalesComponent,
+    ContactComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserAnimationsModule,

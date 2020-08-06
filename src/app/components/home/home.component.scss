@@ -1,7 +1,41 @@
-
 .carousel_item {
     width: 18rem;
     height: 5rem;
+}
+
+.building {
+    text-align: start; 
+    font-size: 100px; 
+    font-weight: bold;
+}
+
+.mini_div {
+    padding: 30px;
+    min-height: 65vh;
+}
+
+.second_row {
+    margin-top: 42px;
+}
+
+.carding, .pat_logo {
+    width: 150px;
+    height: 70px;
+    justify-content: center;
+}
+
+.patner {
+    padding: 20px;
+    color: #38425B;
+}
+
+.carding {
+    justify-content: center;
+    padding: 0px !important;
+}
+
+.carding, .card-body {
+    align-items: center;
 }
 
 .middle_img_margin {
@@ -10,10 +44,6 @@
 }
 
 #t4t-logo {
-    width: 10rem;
-}
-
-#td-logo {
     width: 10rem;
 }
 
@@ -54,10 +84,7 @@
     text-align: center;
     top: 40%;
     padding: 0 10rem;
-    // margin-bottom: -20rem;
-    
-    // left: 50%;
-    // transform: translate(-50%, -50%);
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .carousel-relative {
@@ -80,21 +107,32 @@ div.bg-opacity {
 }
 
 .banner {
-    min-height: 100vh;
-    background-color: red;
+    min-height: 95vh;
     // height: 80vh;
 }
 
 .img-hv80 {
     // min-height: 100vh;
-    max-height: 100vh;
+    max-height: 95vh;
 }
 
 .bus_div {
     background-color: white;
     color: #38425B;
+    padding: 50px;
 }
 .bus_div2 {
+    background-color: whitesmoke;
+    color: #38425B;
+    padding: 50px;
+}
+
+.card_btn {
+    background-color: #38425B;
+    color: whitesmoke;
+}
+
+.card_btn:hover {
     background-color: whitesmoke;
     color: #38425B;
 }
@@ -105,10 +143,6 @@ div.bg-opacity {
     border-radius: 0.5rem;
     // box-shadow: 3px 3px 3px 3px #ccc;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
-}
-
-.bus_col {
-    padding-top: 5rem;
 }
 
 .btn-clr {
@@ -205,6 +239,7 @@ div.bg-opacity {
 }
 .desktop {
     display: block;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 
@@ -251,6 +286,7 @@ div.bg-opacity {
 @media screen and (max-width: 767px) {
     .mobile {
         display: block;
+        font-family: Helvetica, Arial, sans-serif;
     }
     
     .mobile, h3 {
@@ -268,18 +304,15 @@ div.bg-opacity {
     .banner_textm {
         color: whitesmoke;
         position: absolute;
-        // text-align: center;
         top: 50%;
         left: 29%;
         transform: translate(-25%, -25%);
     }
 
     .img-resize {
-        // margin: 15px;
         margin-left: 30px;
         margin-right: 30px;
         margin-top: 30px;
-        // align-content: center;
         height: 20rem;
         width: 20rem;
         border-radius: 0.5rem;
@@ -287,25 +320,10 @@ div.bg-opacity {
     }
 
     #bus_divMobile {
-        // background-color: white;
         width: 100%;
         color: #38425B;
         text-align: center;
         margin-top: 15px;
-        // margin-left: 15px;
-        // margin-right: 15px;
-        // margin-bottom: 15px;
-        // padding: 30px;
-    }
-
-    .bus_col {
-        color: #38425B;
-        text-align: center;
-        margin-top: 0px;
-        // margin-left: 15px;
-        // margin-right: 15px;
-        // margin-bottom: 15px;
-        padding: 30px;
     }
 
     .img-resize2 {
@@ -325,7 +343,6 @@ div.bg-opacity {
 
     .ind_div {
         background-color: whitesmoke;
-        // padding-top: 20px;
         color: #38425B;
         margin: 0px;
         justify-content: center;
@@ -346,7 +363,6 @@ div.bg-opacity {
         font-size: 7px;
         padding: 10px;
         border-radius: 50px;
-        // height: 30px;
     }
 
     .btn-clr2 {
@@ -358,15 +374,9 @@ div.bg-opacity {
     }
 
     .btn-clr2:hover {
-        // background-color: #38425B;
-        // color: whitesmoke;
-        // font-size: 10px;
-        // padding: 10px;
-        // border-radius: 50px;
         color: #38425B;
     }
     
-
     .btn-clr1:hover {
         background-color: white;
         color: black;
@@ -375,6 +385,24 @@ div.bg-opacity {
 }
 
 @media (max-width: 576px) { 
+
+    .mobile {
+        display: block;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    
+    .mobile, h3 {
+        font-size: 20px;
+    }
+
+    .mobile, p {
+        font-size: 14px !important;
+    }
+
+    .desktop {
+        display: none;
+    }
+
     .banner {
         min-height: 50vh;
     }
@@ -402,4 +430,87 @@ div.bg-opacity {
     p {
         font-size: 14px;
     }
+
+    .carding {
+        margin:10px;
+        margin-bottom: 25px;
+        justify-self: center;
+    }
+
+    .carding .card-body {
+        align-items: center;
+    }
+
  }
+
+ @media (min-width: 768px) and (max-width: 991px) { 
+    .img-resize {
+        width: 20rem;
+        height: 20rem;
+        margin-top: 40px;
+    }
+
+    .banner_text {
+        top: 35%;
+    }
+
+    .bus_div2, .bus_div  {
+        padding: 20px;
+    }
+
+    .img-hv80 {
+        height: 100vh;
+    }
+
+    .banner {
+        max-height: 100vh;
+    }
+
+    button {
+        background-color: #38425B;
+        color: whitesmoke;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    button:hover {
+        background-color: whitesmoke;
+        color: #38425B;
+    }
+
+    .demo {
+        width: 80px;
+    }
+
+    .btn_div {
+        padding-top: 20px;
+    }
+
+    .mini_div {
+        min-height: 40vh;
+    }
+
+    .building {
+        font-size: 60px; 
+        font-weight: bold;
+        margin-top: 50px;
+    }
+
+ }
+ 
+//  @media (min-device-width : 768px)  and (max-device-width : 1007px) {
+//  @media (min-width: 992px) {
+    // .banner_text {
+    //     top: 20%;
+    //     color: red;
+    //     // padding: 50px;
+    // }
+   
+    // .img-hv80 {
+    //     height: 80vh;
+    // }
+
+    // .banner {
+    //     max-height: 80vh;
+    // }
+//  }
