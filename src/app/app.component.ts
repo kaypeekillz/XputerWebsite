@@ -7,12 +7,13 @@ import * as AOS from 'aos';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit  {
-  title = 'xputerWebsite';
+  title = 'Xputer Technologies';
 
   ngOnInit() {
     AOS.init({
       duration: 1200,
     });
   }
+
 }
 

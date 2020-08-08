@@ -19,6 +19,8 @@ import { ECommerceComponent } from './components/e-commerce/e-commerce.component
 import { AfterSalesComponent } from './components/after-sales/after-sales.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ServicesComponent } from './components/services/services.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +44,7 @@ import { ServicesComponent } from './components/services/services.component';
     NguiUtilsModule,
     CarouselModule,
     RecaptchaModule,
+    ReactiveFormsModule,
     MDBBootstrapModule.forRoot()
   ],
   providers: [],

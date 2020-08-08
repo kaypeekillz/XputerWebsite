@@ -1,39 +1,41 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-sm-12 col-lg-8">
-            <form class="text-center p-5" action="#!">
+            <form class="text-center p-5" action="/send" [formGroup]="contactForm">
+                <!-- (ngSubmit)="onSubmit()" -->
                 <h3 class="h4 mb-4" style="text-align: left; font-weight: bold;">GET IN TOUCH</h3>
                 <div class="form-row mb-4">
                     <div class="col md-form name">
-                        <input mdbInput type="text" id="form1" class="form-control">
+                        <input mdbInput formControlName="name" name="name" type="text" id="form1" class="form-control">
                         <label for="form1" class="label">Name</label>
                     </div>
 
                     <div class="col md-form email">
-                        <input mdbInput pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" 
-                            type="email" required id="form1" class="form-control">
+                        <input mdbInput type="email" formControlName="email" name="email" required id="form1" class="form-control">
+                            <!-- <input mdbInput pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" 
+                            type="email" required id="form1" class="form-control"> -->
                         <label for="form1" class="label">Email</label>
                     </div>
                 </div>
 
                 <div class="form-row mb-4" style="margin-top: 0px !important;">
                     <div class="col md-form phone">
-                        <input mdbInput type="text" id="form1" class="form-control">
+                        <input mdbInput formControlName="phone" name="phone" type="text" id="form1" class="form-control">
                         <label for="form1" class="label">Phone</label>
                     </div>
 
                     <div class="col md-form subject">
-                        <input mdbInput type="text" id="form1" class="form-control">
+                        <input mdbInput formControlName="subject" name="subject" type="text" id="form1" class="form-control">
                         <label for="form1" class="label">Subject</label>
                     </div>
                 </div>
 
                 <div class="md-form md-outline">
-                    <textarea type="text" id="form75" style="height: 150px;" class="form-control md-textarea" rows="3" mdbInput></textarea>
+                    <textarea name="message" formControlName="message" type="text" id="form75" style="height: 150px;" class="form-control md-textarea" rows="3" mdbInput></textarea>
                     <label for="form75">Message</label>
                 </div>
                 <div class="send_btn">
-                    <button mdbBtn>Send</button>
+                    <button mdbBtn [disabled]="!contactForm.valid">Send</button>
                 </div>
             </form>
         </div>
