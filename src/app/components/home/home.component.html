@@ -1,381 +1,394 @@
-
-<div class="banner">
-    <div>
-        <mdb-carousel [animation]="'slide'">
-            <mdb-carousel-item class="carousel-relative">
-              <div class="bg-opacity"></div>
-              <img class="d-block w-100 img-absolute img-hv80" src="assets/images/banner1.jpg" alt="First slide">
-            </mdb-carousel-item>
-            <mdb-carousel-item>
-              <img class="d-block w-100 img-hv80" src="assets/images/del.jpg" alt="Second slide">
-            </mdb-carousel-item>
-            <mdb-carousel-item class="carousel-relative">
-                <div class="bg-opacity"></div>
-                <img class="d-block w-100 img-absolute img-hv80" src="assets/images/banner3.jpg" alt="First slide">
-              </mdb-carousel-item>
-        </mdb-carousel>
-
-        <div class="banner_text">
-            <h1 class="animate__animated animate__backInDown">
-                Empowering fast-growing and emerging businesses with Information Technology 
-                Solutions
-            </h1>
-            <p class="animate__animated animate__backInUp" style="font-weight: 100;">
-                Our competence and competitive strength in IT solutions lie in our 
-                seasoned and well-qualified repertoire of professionals
-            </p>
-        </div>
-    </div>
+<div [ngClass]="{hidelater: showfirst}" class="hv800">
+    <!-- <h1 style="padding: 200px;">
+        first show....
+    </h1> -->
 </div>
 
-<!-- Business process section -->
-
-<div class="bus_div desktop">
-    <div class="container">
-        <div class="row">
+<div [ngClass]="{hidefirst: showlater}">
+    <div class="banner">
+        <div>
+            <mdb-carousel [animation]="'slide'">
+                <mdb-carousel-item class="carousel-relative">
+                  <div class="bg-opacity"></div>
+                  <img class="d-block w-100 img-absolute img-hv80" src="assets/images/banner1.jpg" alt="First slide">
+                </mdb-carousel-item>
+                <mdb-carousel-item>
+                  <img class="d-block w-100 img-hv80" src="assets/images/del.jpg" alt="Second slide">
+                </mdb-carousel-item>
+                <mdb-carousel-item class="carousel-relative">
+                    <div class="bg-opacity"></div>
+                    <img class="d-block w-100 img-absolute img-hv80" src="assets/images/banner3.jpg" alt="First slide">
+                  </mdb-carousel-item>
+            </mdb-carousel>
+    
+            <div class="banner_text">
+                <h1 class="animate__animated animate__backInDown" style="font-size: 4rem;">
+                    <!-- Innovation. Excellence. Impact. -->
+                    <span style="color:yellowgreen">Innovation. </span> 
+                    <span style="color:#DF1995">Excellence. </span> 
+                    <span style="color:turquoise">Impact. </span> 
+                    <!-- Giving Your Idea Wings -->
+                    <!-- Empowering fast-growing and emerging businesses with Information Technology 
+                    Solutions -->
+                </h1>
+                <p class="animate__animated animate__backInUp" style="font-weight: 100; font-size: 18px;" >
+                    Empowering businesses and organizations with cutting-edge, world class solutions.
+                    <!-- Our competence and competitive strength in IT solutions lie in our 
+                    seasoned and well-qualified repertoire of professionals
+                </p> -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Business process section -->
+    
+    <div class="bus_div desktop">
+        <div class="container">
+            <div class="row">
+                    <ngui-inview class="col-md-6 col-sm-12 col-lg-6">
+                        <div *ngIf> 
+                            <div class="animate__animated animate__backInLeft">
+                                <h1 class="building">
+                                    <span style="color: yellowgreen;">ALWAYS</span>
+                                     BUILDING 
+                                    <span style="color: turquoise;">TO SCALE</span>
+                                    <!-- TO SCALE -->
+                                </h1>
+                            </div>
+                        </div>
+                    </ngui-inview>
+    
+                    <ngui-inview class="col-md-6 col-sm-12 col-lg-6">
+                        <div *ngIf> 
+                            <div class="animate__animated animate__backInRight mt-3">
+                                <div>
+                                    <h3 >Business process automation is our core competence</h3>
+                                    <p>
+                                        For over 15 years we have dramatically improved the competetiveness of our 
+                                        clients by focusing on workflow automation, system integration and analytics.
+                                        We are perfectly positioned to undertake software projects of any form or 
+                                        magnitude, all developed to world-class standards and benchmarks.
+                                    </p>
+                                    <button mdbBtn routerLink="/contact-us" class="btn-clr">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                    </ngui-inview>
+            </div>
+        
+        </div>
+    </div>
+    
+    <div class="bus_div2 mobile" style="background-color: white;">
+        <div class="animate__animated animate__backInRight">
+            <h1 style="font-size: 60px;">
+                <span style="color: yellowgreen;">ALWAYS</span>
+                 BUILDING 
+                <span style="color: turquoise;">TO SCALE</span>
+            </h1>
+        </div>
+    
+        <div id="sec_div_inner" class="bus_col animate__animated animate__backInLeft">
+            <h3 >Business process automation is our core competence</h3>
+            <p>
+                For over 15 years we have dramatically improved the competetiveness of our 
+                clients by focusing on workflow automation, system integration and analytics.
+                We are perfectly positioned to undertake software projects of any form or 
+                magnitude, all developed to world-class standards and benchmarks.
+            </p>
+            <button mdbBtn routerLink="contact-us" class="btn-clr2">Contact Us</button>
+        </div> 
+    </div>
+    
+    <!-- Flagship Workflow section -->
+    
+    <div class="bus_div2 desktop">
+        <div class="container">
+            <div class="row">
+    
                 <ngui-inview class="col-md-6 col-sm-12 col-lg-6">
                     <div *ngIf> 
                         <div class="animate__animated animate__backInLeft">
-                            <h1 class="building">
-                                <span style="color: yellowgreen;">ALWAYS</span>
-                                 BUILDING 
-                                <span style="color: turquoise;">TO SCALE</span>
-                                <!-- TO SCALE -->
-                            </h1>
-                        </div>
-                    </div>
-                </ngui-inview>
-
-                <ngui-inview class="col-md-6 col-sm-12 col-lg-6">
-                    <div *ngIf> 
-                        <div class="animate__animated animate__backInRight mt-3">
-                            <div>
-                                <h3 >Business process automation is our core competence</h3>
-                                <p>
-                                    For over 15 years we have dramatically improved the competetiveness of our 
-                                    clients by focusing on workflow automation, system integration and analytics.
-                                    We are perfectly positioned to undertake software projects of any form or 
-                                    magnitude, all developed to world-class standards and benchmarks.
-                                </p>
-                                <button mdbBtn routerLink="/contact-us" class="btn-clr">Contact Us</button>
+                            <div class="m-3">
+                                <img src="assets/images/hands.jpg" class="img-resize">
                             </div>
                         </div>
                     </div>
                 </ngui-inview>
-        </div>
     
-    </div>
-</div>
-
-<div class="bus_div2 mobile" style="background-color: white;">
-    <div class="animate__animated animate__backInRight">
-        <h1 style="font-size: 60px;">
-            <span style="color: yellowgreen;">ALWAYS</span>
-             BUILDING 
-            <span style="color: turquoise;">TO SCALE</span>
-        </h1>
-    </div>
-
-    <div id="sec_div_inner" class="bus_col animate__animated animate__backInLeft">
-        <h3 >Business process automation is our core competence</h3>
-        <p>
-            For over 15 years we have dramatically improved the competetiveness of our 
-            clients by focusing on workflow automation, system integration and analytics.
-            We are perfectly positioned to undertake software projects of any form or 
-            magnitude, all developed to world-class standards and benchmarks.
-        </p>
-        <button mdbBtn routerLink="contact-us" class="btn-clr2">Contact Us</button>
-    </div> 
-</div>
-
-<!-- Flagship Workflow section -->
-
-<div class="bus_div2 desktop">
-    <div class="container">
-        <div class="row">
-
-            <ngui-inview class="col-md-6 col-sm-12 col-lg-6">
-                <div *ngIf> 
-                    <div class="animate__animated animate__backInLeft">
-                        <div class="m-3">
-                            <img src="assets/images/hands.jpg" class="img-resize">
+                <ngui-inview class="col-md-6 col-sm-12 col-lg-6 ">
+                    <div *ngIf> 
+                        <div class="animate__animated animate__backInRight mt-3">
+                            <h3>Endear our Flagship Workflow Solution</h3>
+                            <p>
+                                Cohesion is a vital requirement of a business eager to meet its target 
+                                and achieve sustainable growth. Essential to a business of any appreciable 
+                                size are systems for defining, amending and enforcing business processes. 
+                                The operational arm that meets the business obligations is of great importance, 
+                                while the information flow within the operations team is also critical. 
+                                If these three factors fall out of sync, as they often do, profitability and 
+                                sustainable growth is greatly impacted.
+                            </p>
+                            <button mdbBtn routerLink="/endear-page" class="btn-clr2">Features</button>
                         </div>
                     </div>
+                </ngui-inview>
+                
+            </div>
+        
+        </div>
+    </div>
+    
+    <div class="bus_div2 mobile">
+        <div class="bus_col animate__animated animate__backInLeft">
+            <h3>Endear our Flagship Workflow Solution</h3>
+            <p>
+                Cohesion is a vital requirement of a business eager to meet its target 
+                and achieve sustainable growth. Essential to a business of any appreciable 
+                size are systems for defining, amending and enforcing business processes. 
+                The operational arm that meets the business obligations is of great importance, 
+                while the information flow within the operations team is also critical. 
+                If these three factors fall out of sync, as they often do, profitability and 
+                sustainable growth is greatly impacted.
+            </p>
+            <button mdbBtn routerLink="/endear-page" class="btn-clr2">Features</button>
+        </div> 
+    </div>
+    
+    
+    <div class="sys_div hv70 desktop">
+        <div class="container">
+            <div class="col-md-12 col-sm-12 text-center" id="flexible_system">
+                <h3>Flexible System Integration</h3>
+                <p>
+                    Currently out-of-the-box, Endear integrates with sales processes on SAP B1,<br> 
+                    Microsoft Dynamics AX 2012, Magento 2 and Dynamics 365.
+                </p>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+                    <img src="assets/images/ax2012.png" id="ax_logo">
                 </div>
-            </ngui-inview>
-
-            <ngui-inview class="col-md-6 col-sm-12 col-lg-6 ">
-                <div *ngIf> 
-                    <div class="animate__animated animate__backInRight mt-3">
-                        <h3>Endear our Flagship Workflow Solution</h3>
-                        <p>
-                            Cohesion is a vital requirement of a business eager to meet its target 
-                            and achieve sustainable growth. Essential to a business of any appreciable 
-                            size are systems for defining, amending and enforcing business processes. 
-                            The operational arm that meets the business obligations is of great importance, 
-                            while the information flow within the operations team is also critical. 
-                            If these three factors fall out of sync, as they often do, profitability and 
-                            sustainable growth is greatly impacted.
-                        </p>
-                        <button mdbBtn routerLink="/endear-page" class="btn-clr2">Features</button>
-                    </div>
+                <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+                    <img src="assets/images/yes.png" id="d365_logo">
                 </div>
-            </ngui-inview>
-            
+                <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+                    <img src="assets/images/sap_logo.png" id="sap_logo">
+                </div>
+                <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+                    <img src="assets/images/MagentoLogo.png" id="magento_logo">
+                </div>
+            </div>
         </div>
     
     </div>
-</div>
-
-<div class="bus_div2 mobile">
-    <div class="bus_col animate__animated animate__backInLeft">
-        <h3>Endear our Flagship Workflow Solution</h3>
-        <p>
-            Cohesion is a vital requirement of a business eager to meet its target 
-            and achieve sustainable growth. Essential to a business of any appreciable 
-            size are systems for defining, amending and enforcing business processes. 
-            The operational arm that meets the business obligations is of great importance, 
-            while the information flow within the operations team is also critical. 
-            If these three factors fall out of sync, as they often do, profitability and 
-            sustainable growth is greatly impacted.
-        </p>
-        <button mdbBtn routerLink="/endear-page" class="btn-clr2">Features</button>
-    </div> 
-</div>
-
-
-<div class="sys_div hv70 desktop">
-    <div class="container">
-        <div class="col-md-12 col-sm-12 text-center" id="flexible_system">
+    
+    <div class="sys_div mobile">
+        <div class="col-md-12 text-center" id="flexible_system">
             <h3>Flexible System Integration</h3>
             <p>
                 Currently out-of-the-box, Endear integrates with sales processes on SAP B1,<br> 
                 Microsoft Dynamics AX 2012, Magento 2 and Dynamics 365.
             </p>
         </div>
-
-        <div class="row">
-            <div class="col-md-3 col-sm-6 d-flex justify-content-center">
-                <img src="assets/images/ax2012.png" id="ax_logo">
+    
+        <div class="col-md-12  d-flex justify-content-center pb-2">
+            <img src="assets/images/ax2012.png" id="ax_logo">
+        </div>
+        <div class="col-md-12 d-flex justify-content-center pt-3">
+            <img src="assets/images/yes.png" id="d365_logo">
+        </div>
+        <div class="col-md-12 d-flex justify-content-center p-2">
+            <img src="assets/images/sap_logo.png" id="sap_logo">
+        </div>
+        <div class="col-md-12 d-flex justify-content-center p-4">
+            <img src="assets/images/MagentoLogo.png" id="magento_logo">
+        </div>
+    
+    </div>
+    
+    <!-- Industries served section -->
+    
+    <div class="ind_div hv100 desktop" style="padding-top: 20px;" id="industriesCard">
+        <div class="container">
+            <div class="col-md-12 col-sm-12 text-center" id="Industries">
+                <h3>Industries Served</h3>
+                <p>We have provided solutions for these industries and more.</p>
             </div>
-            <div class="col-md-3 col-sm-6 d-flex justify-content-center">
-                <img src="assets/images/yes.png" id="d365_logo">
-            </div>
-            <div class="col-md-3 col-sm-6 d-flex justify-content-center">
-                <img src="assets/images/sap_logo.png" id="sap_logo">
-            </div>
-            <div class="col-md-3 col-sm-6 d-flex justify-content-center">
-                <img src="assets/images/MagentoLogo.png" id="magento_logo">
+    
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end">
+                    <div class="card" style="width: 25rem; margin-bottom: 10px;">
+                        <img src="assets/images/e-commerce.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title text-center">eCommerce</h4>
+                            <p class="card-text text-center">
+                                Endear as Order Management System (OMS) increased backoffice operations 
+                                efficiency across online and brick and mortar stores.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <button mdbBtn routerLink="/e-commerce" class="card_btn">Case Study</button>
+                                <button mdbBtn routerLink="/demo-request" class="card_btn demo">Demo</button>
+                            </div>
+                        
+                        </div>
+                      </div>
+                </div>
+    
+                  <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-start">
+                    <div class="card" style="width: 25rem; margin-bottom: 10px;">
+                        <img src="assets/images/aftersales-dark.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title text-center">After-Sales Service</h4>
+                            <p class="card-text text-center">
+                                Customer Experience improved greatly with ease of tracking support 
+                                ticket across stages and locations.
+                            </p>
+                            <div class="d-flex justify-content-center btn_div">
+                                <button mdbBtn routerLink="/after-sales" class="card_btn">Case Study</button>
+                                <button mdbBtn routerLink="/demo-request" class="card_btn demo">Demo</button>
+                            </div>
+                   
+                        </div>
+                      </div>
+                  </div>
             </div>
         </div>
     </div>
-
-</div>
-
-<div class="sys_div mobile">
-    <div class="col-md-12 text-center" id="flexible_system">
-        <h3>Flexible System Integration</h3>
-        <p>
-            Currently out-of-the-box, Endear integrates with sales processes on SAP B1,<br> 
-            Microsoft Dynamics AX 2012, Magento 2 and Dynamics 365.
-        </p>
-    </div>
-
-    <div class="col-md-12  d-flex justify-content-center pb-2">
-        <img src="assets/images/ax2012.png" id="ax_logo">
-    </div>
-    <div class="col-md-12 d-flex justify-content-center pt-3">
-        <img src="assets/images/yes.png" id="d365_logo">
-    </div>
-    <div class="col-md-12 d-flex justify-content-center p-2">
-        <img src="assets/images/sap_logo.png" id="sap_logo">
-    </div>
-    <div class="col-md-12 d-flex justify-content-center p-4">
-        <img src="assets/images/MagentoLogo.png" id="magento_logo">
-    </div>
-
-</div>
-
-<!-- Industries served section -->
-
-<div class="ind_div hv100 desktop" style="padding-top: 20px;" id="industriesCard">
-    <div class="container">
-        <div class="col-md-12 col-sm-12 text-center" id="Industries">
+    
+    
+    <div class="ind_div hv100 mobile" id="industriesCard">
+        <div class="text-center" id="Industries">
             <h3>Industries Served</h3>
             <p>We have provided solutions for these industries and more.</p>
         </div>
-
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end">
-                <div class="card" style="width: 25rem; margin-bottom: 10px;">
-                    <img src="assets/images/e-commerce.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title text-center">eCommerce</h4>
-                        <p class="card-text text-center">
-                            Endear as Order Management System (OMS) increased backoffice operations 
-                            efficiency across online and brick and mortar stores.
-                        </p>
-                        <div class="d-flex justify-content-center">
-                            <button mdbBtn routerLink="/e-commerce" class="card_btn">Case Study</button>
-                            <button mdbBtn routerLink="/demo-request" class="card_btn demo">Demo</button>
-                        </div>
-                    
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end">
+            <div class="card" style="width: 25rem; margin-bottom: 10px;">
+                <img src="assets/images/e-commerce.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title text-center">eCommerce</h4>
+                    <p class="card-text text-center">
+                        Endear as Order Management System (OMS) increased backoffice operations 
+                        efficiency across online and brick and mortar stores.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <button mdbBtn routerLink="/e-commerce" class="btn-clr1">Case Study</button>
+                        <button mdbBtn routerLink="/demo-request" class="btn-clr1" id="demo_btn1">Demo</button>
                     </div>
-                  </div>
-            </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-start">
-                <div class="card" style="width: 25rem; margin-bottom: 10px;">
-                    <img src="assets/images/aftersales-dark.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title text-center">After-Sales Service</h4>
-                        <p class="card-text text-center">
-                            Customer Experience improved greatly with ease of tracking support 
-                            ticket across stages and locations.
-                        </p>
-                        <div class="d-flex justify-content-center btn_div">
-                            <button mdbBtn routerLink="/after-sales" class="card_btn">Case Study</button>
-                            <button mdbBtn routerLink="/demo-request" class="card_btn demo">Demo</button>
-                        </div>
-               
-                    </div>
-                  </div>
-              </div>
+                
+                </div>
+                </div>
         </div>
-    </div>
-</div>
-
-
-<div class="ind_div hv100 mobile" id="industriesCard">
-    <div class="text-center" id="Industries">
-        <h3>Industries Served</h3>
-        <p>We have provided solutions for these industries and more.</p>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end">
+    
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-start">
         <div class="card" style="width: 25rem; margin-bottom: 10px;">
-            <img src="assets/images/e-commerce.jpg" class="card-img-top" alt="...">
+            <img src="assets/images/aftersales-dark.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h4 class="card-title text-center">eCommerce</h4>
+                <h4 class="card-title text-center">After-Sales Service</h4>
                 <p class="card-text text-center">
-                    Endear as Order Management System (OMS) increased backoffice operations 
-                    efficiency across online and brick and mortar stores.
+                    Customer Experience improved greatly with ease of tracking support 
+                    ticket across stages and locations.
                 </p>
                 <div class="d-flex justify-content-center">
-                    <button mdbBtn routerLink="/e-commerce" class="btn-clr1">Case Study</button>
+                    <button mdbBtn routerLink="/after-sales" class="btn-clr1">Case Study</button>
                     <button mdbBtn routerLink="/demo-request" class="btn-clr1" id="demo_btn1">Demo</button>
                 </div>
-            
+        
             </div>
             </div>
+        </div>
+    
     </div>
-
-    <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-start">
-    <div class="card" style="width: 25rem; margin-bottom: 10px;">
-        <img src="assets/images/aftersales-dark.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h4 class="card-title text-center">After-Sales Service</h4>
-            <p class="card-text text-center">
-                Customer Experience improved greatly with ease of tracking support 
-                ticket across stages and locations.
-            </p>
-            <div class="d-flex justify-content-center">
-                <button mdbBtn routerLink="/after-sales" class="btn-clr1">Case Study</button>
-                <button mdbBtn routerLink="/demo-request" class="btn-clr1" id="demo_btn1">Demo</button>
-            </div>
+    
+    <!-- <div class="hv60">
+        <div class="container p-5 partners-padding">
+            <h3 class="d-flex justify-content-center mb-5" id="patners_text">Partners</h3>
+    
+              <mdb-carousel [animation]="'slide'" [isControls]="false">
+                <mdb-carousel-item>
+                    <div class="w-100 d-flex justify-content-center">
+    
+                        <img src="assets/images/ZinoxLogo.png" class="w-25 carousel_item">
+                        <img src="assets/images/kongaLogo.png" class="w-25 carousel_item middle_img_margin">
+                        <img src="assets/images/spring-xpress.png" class="w-25 carousel_item">
+                    </div>
+                </mdb-carousel-item>
+    
+                <mdb-carousel-item>
+                    <div class="w-100 d-flex justify-content-center">
+                        <img id="t4t-logo" src="assets/images/t4t-logo.png" class="w-25 carousel_item">
+                        <img id="td-logoz" src="assets/images/TDlogo.png" class="w-25 carousel_item middle_img_margin">
+                        <img src="assets/images/1st-news-logo.png" class="w-25 carousel_item"> 
+                    </div>
+                </mdb-carousel-item>
+                
+                <mdb-carousel-item>
+                    <div class="w-100 d-flex justify-content-center">
+                        <img id="options-logo" src="assets/images/optionsLogo.png" class=" carousel_item">
+                        <img src="assets/images/itec-logo.png" class=" carousel_item middle_img_margin">
+                        <img id="nbplc-logo" src="assets/images/nbplc-logo.png" class=" carousel_item">
+                    </div>
+                </mdb-carousel-item>
+              </mdb-carousel>
     
         </div>
+    </div> -->
+    
+    <div class="mini_div">
+        <div class="col-md-12 col-sm-12 col-lg-12 text-center patner">
+            <h3>Our Partners</h3>
+            <p>Here are some of the organisations we have a strong relationship with.</p>
         </div>
-    </div>
-
-</div>
-
-<!-- <div class="hv60">
-    <div class="container p-5 partners-padding">
-        <h3 class="d-flex justify-content-center mb-5" id="patners_text">Partners</h3>
-
-          <mdb-carousel [animation]="'slide'" [isControls]="false">
-            <mdb-carousel-item>
-                <div class="w-100 d-flex justify-content-center">
-
-                    <img src="assets/images/ZinoxLogo.png" class="w-25 carousel_item">
-                    <img src="assets/images/kongaLogo.png" class="w-25 carousel_item middle_img_margin">
-                    <img src="assets/images/spring-xpress.png" class="w-25 carousel_item">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 carding">
+              <div class="card card-body">
+                <img src="assets/images/ZinoxLogo.png" class="pat_logo">
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 carding">
+                <div class="card card-body">
+                    <img src="assets/images/kongaLogo.png" class="pat_logo">
                 </div>
-            </mdb-carousel-item>
-
-            <mdb-carousel-item>
-                <div class="w-100 d-flex justify-content-center">
-                    <img id="t4t-logo" src="assets/images/t4t-logo.png" class="w-25 carousel_item">
-                    <img id="td-logoz" src="assets/images/TDlogo.png" class="w-25 carousel_item middle_img_margin">
-                    <img src="assets/images/1st-news-logo.png" class="w-25 carousel_item"> 
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 carding">
+                <div class="card card-body">
+                    <img src="assets/images/spring-xpress.png" class="pat_logo">
                 </div>
-            </mdb-carousel-item>
-            
-            <mdb-carousel-item>
-                <div class="w-100 d-flex justify-content-center">
-                    <img id="options-logo" src="assets/images/optionsLogo.png" class=" carousel_item">
-                    <img src="assets/images/itec-logo.png" class=" carousel_item middle_img_margin">
-                    <img id="nbplc-logo" src="assets/images/nbplc-logo.png" class=" carousel_item">
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 carding">
+                <div class="card card-body">
+                    <img id="t4t-logo" src="assets/images/t4t-logo.png" class="pat_logo">
                 </div>
-            </mdb-carousel-item>
-          </mdb-carousel>
-
-    </div>
-</div> -->
-
-<div class="mini_div">
-    <div class="col-md-12 col-sm-12 col-lg-12 text-center patner">
-        <h3>Our Partners</h3>
-        <p>Here are some of the organisations we have a strong relationship with.</p>
-    </div>
-    <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-3 carding">
-          <div class="card card-body">
-            <img src="assets/images/ZinoxLogo.png" class="pat_logo">
-          </div>
+              </div>
+    
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 carding">
-            <div class="card card-body">
-                <img src="assets/images/kongaLogo.png" class="pat_logo">
+        <!-- SECOND LINE OF PATENERS -->
+    
+        <div class="row second_row">
+            <div class="col-lg-3 col-md-3 col-sm-3 carding">
+              <div class="card card-body">
+                <img src="assets/images/TDlogo.png" class="pat_logo">
+              </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-3 carding">
-            <div class="card card-body">
-                <img src="assets/images/spring-xpress.png" class="pat_logo">
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-3 carding">
-            <div class="card card-body">
-                <img id="t4t-logo" src="assets/images/t4t-logo.png" class="pat_logo">
-            </div>
-          </div>
-
-    </div>
-    <!-- SECOND LINE OF PATENERS -->
-
-    <div class="row second_row">
-        <div class="col-lg-3 col-md-3 col-sm-3 carding">
-          <div class="card card-body">
-            <img src="assets/images/TDlogo.png" class="pat_logo">
-          </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 carding">
+                <div class="card card-body">
+                    <img src="assets/images/1st-news-logo.png" class="pat_logo"> 
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 carding">
+                <div class="card card-body">
+                    <img id="nbplc-logo" src="assets/images/nbplc-logo.png" class="pat_logo">
+                    <!-- <img id="options-logo" src="assets/images/optionsLogo.png"> -->
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 carding">
+                <div class="card card-body">
+                    <img src="assets/images/itec-logo.png" class="pat_logo">
+                </div>
+              </div>
+    
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 carding">
-            <div class="card card-body">
-                <img src="assets/images/1st-news-logo.png" class="pat_logo"> 
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-3 carding">
-            <div class="card card-body">
-                <img id="nbplc-logo" src="assets/images/nbplc-logo.png" class="pat_logo">
-                <!-- <img id="options-logo" src="assets/images/optionsLogo.png"> -->
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-3 carding">
-            <div class="card card-body">
-                <img src="assets/images/itec-logo.png" class="pat_logo">
-            </div>
-          </div>
-
+    
     </div>
-
 </div>

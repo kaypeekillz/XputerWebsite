@@ -20,6 +20,8 @@ import { AfterSalesComponent } from './components/after-sales/after-sales.compon
 import { ContactComponent } from './components/contact/contact.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
+import { ToastrModule } from "ngx-toastr";
 
 @NgModule({
   declarations: [
@@ -38,6 +40,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     NguiInviewModule, 
     NguiListModule, 
@@ -45,7 +48,21 @@ import { ReactiveFormsModule } from '@angular/forms';
     CarouselModule,
     RecaptchaModule,
     ReactiveFormsModule,
+    ToastrModule.forRoot({
+      timeOut: 4000,
+      positionClass: "toast-top-center",
+      preventDuplicates: true,
+      iconClasses: {
+        error: "toast-error",
+        info: "toast-info",
+        success: "toast-success",
+        warning: "toast-warning",
+      },
+    }),
     MDBBootstrapModule.forRoot()
+  ],
+  exports: [
+    ToastrModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

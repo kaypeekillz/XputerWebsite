@@ -39,9 +39,13 @@
     outline:none;
 }
 
+.mdbNav {
+    padding-bottom: 0px !important;
+}
+
 #home_btn:hover, #demo_btn:hover, #service_btn:hover, #endear_btn:hover, #contact_btn:hover {
     color: #38425B;
     border-bottom: 3px solid #38425B;
-    margin: 0px;
-    
+    padding-bottom: 8px !important;
+    margin: 0px;   
 }

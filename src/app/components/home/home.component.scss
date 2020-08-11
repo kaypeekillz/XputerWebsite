@@ -69,6 +69,18 @@
 
 }
 
+.hidefirst {
+    display: none;
+}
+
+.hidelater {
+    display: none;
+}
+
+.hv800 {
+    min-height: 90vh;
+}
+
 #head_texts {
     position: absolute;
     top: 450px;
@@ -81,6 +93,8 @@
 .banner_text {
     color: whitesmoke;
     position: absolute;
+    // justify-content: center;
+    left: 7%;
     text-align: center;
     top: 40%;
     padding: 0 10rem;

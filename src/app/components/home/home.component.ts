@@ -22,11 +22,19 @@ export class HomeComponent implements OnInit {
   hiderightslider: boolean;
   hideleftslider: boolean;
 
+  showfirst: boolean = false;
+  showlater: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+
+    setTimeout(() => {
+      this.showfirst = true;
+      this.showlater = false;
+    }, 5000);
   }
 
   scrollRight() {
