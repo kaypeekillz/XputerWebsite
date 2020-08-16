@@ -16,4 +16,8 @@ export class HeaderComponentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  loader() {
+    window.location.href ="/"
+  }
+
 }

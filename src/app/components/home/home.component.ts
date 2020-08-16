@@ -34,12 +34,20 @@ export class HomeComponent implements OnInit {
     setTimeout(() => {
       this.showfirst = true;
       this.showlater = false;
-    }, 5000);
+    }, 2000);
   }
+
+  // babeTask() {
+  //     let name: string = "Riri";
+  //     let age: number = 10;
+  //     let isAlive: boolean = true;
+
+  //     console.log("my task: " + name + " is " + age + "years old and it is" + isAlive);
+  // }
+
 
   scrollRight() {
     const elmnt = document.getElementById("myDIVM");
-    // elmnt.scrollLeft += 408;
     elmnt.scrollLeft += 150;
     // elmnt.scrollRight += 0;
     const total = elmnt.scrollLeft + elmnt.clientWidth;

@@ -31,6 +31,7 @@ export class ContactComponent implements OnInit {
     message: new FormControl('', Validators.required),
   });
 
+// this is to validate emailAddress!
   get controlsForm() { return this.contactForm.controls; }
 
   send(values: any) {

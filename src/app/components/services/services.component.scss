@@ -1,7 +1,11 @@
 .main {
-    background-image: url("../../../assets/images/code.png");
+    background-image: url("../../../assets/images/from_img_new2.jpg");
     height: 400px;
     width: 100%;
+    background-size: cover;
+    align-content: center;
+    // object-fit: cover;
+    // overflow: hidden;
 }
 
 .text {

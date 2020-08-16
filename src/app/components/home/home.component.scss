@@ -78,7 +78,25 @@
 }
 
 .hv800 {
-    min-height: 90vh;
+    min-height: 95vh;
+    // padding: 100px;
+    width: 100%;
+}
+
+.logo {
+    top: 40%;
+    width: 250px;
+    height: 70px;
+    left: 40% !important;
+    position: absolute;
+}
+
+.texts {
+    top: 52%;
+    position: absolute;
+    left: 38%;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #38425B;
 }
 
 #head_texts {
@@ -141,12 +159,19 @@ div.bg-opacity {
     padding: 50px;
 }
 
-.card_btn {
+.card_button {
     background-color: #38425B;
     color: whitesmoke;
+    padding: 10px;
+    width: 120px;
 }
 
-.card_btn:hover {
+.demo {
+    width: 120px;
+    padding: 10px;
+}
+
+.card_button:hover {
     background-color: whitesmoke;
     color: #38425B;
 }
@@ -207,6 +232,7 @@ div.bg-opacity {
 
 .card-img-top {
     width: auto;
+    // width: 200px;
     margin: 2px;
     height: 200px;
 }
@@ -418,17 +444,25 @@ div.bg-opacity {
     }
 
     .banner {
-        min-height: 50vh;
+        min-height: 70vh;
     }
+
+    .hv800 {
+        min-height: 50vh;
+        // width: 100%;
+    }
+
     .img-hv80 {
-        height: 50vh;
+        height: 70vh;
     }
     .banner_text {
         position: absolute;
         text-align: center;
-        top: 20%;
+        top: 30%;
         padding: 0 4rem;
     }
+
+
     .banner_text, h1 {
         font-size: 20px !important;
     }
@@ -465,7 +499,7 @@ div.bg-opacity {
     }
 
     .banner_text {
-        top: 35%;
+        top: 30%;
     }
 
     .bus_div2, .bus_div  {
@@ -473,11 +507,11 @@ div.bg-opacity {
     }
 
     .img-hv80 {
-        height: 100vh;
+        height: 80vh;
     }
 
     .banner {
-        max-height: 100vh;
+        min-height: 80vh;
     }
 
     button {
@@ -497,7 +531,7 @@ div.bg-opacity {
     }
 
     .btn_div {
-        padding-top: 20px;
+        // padding-top: 20px;
     }
 
     .mini_div {
@@ -511,20 +545,3 @@ div.bg-opacity {
     }
 
  }
- 
-//  @media (min-device-width : 768px)  and (max-device-width : 1007px) {
-//  @media (min-width: 992px) {
-    // .banner_text {
-    //     top: 20%;
-    //     color: red;
-    //     // padding: 50px;
-    // }
-   
-    // .img-hv80 {
-    //     height: 80vh;
-    // }
-
-    // .banner {
-    //     max-height: 80vh;
-    // }
-//  }

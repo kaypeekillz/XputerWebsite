@@ -1,47 +1,39 @@
-<div [ngClass]="{hidelater: showfirst}" class="hv800">
-    <!-- <h1 style="padding: 200px;">
-        first show....
-    </h1> -->
+<div [ngClass]="{hidelater: showfirst}" class="hv800 animate__animated animate__swing">
+    <img src="assets/images/second_logo.png" class="logo">
+    <h2 class="texts">Giving your idea wings</h2>
 </div>
 
-<div [ngClass]="{hidefirst: showlater}">
-    <div class="banner">
-        <div>
-            <mdb-carousel [animation]="'slide'">
-                <mdb-carousel-item class="carousel-relative">
-                  <div class="bg-opacity"></div>
-                  <img class="d-block w-100 img-absolute img-hv80" src="assets/images/banner1.jpg" alt="First slide">
+<div class="banner" [ngClass]="{hidefirst: showlater}">
+    <div>
+        <mdb-carousel [animation]="'slide'">
+            <mdb-carousel-item class="carousel-relative">
+                <div class="bg-opacity"></div>
+                <img class="d-block w-100 img-absolute img-hv80" src="assets/images/banner1.jpg" alt="First slide">
+            </mdb-carousel-item>
+            <mdb-carousel-item>
+                <img class="d-block w-100 img-hv80" src="assets/images/del.jpg" alt="Second slide">
+            </mdb-carousel-item>
+            <mdb-carousel-item class="carousel-relative">
+                <div class="bg-opacity"></div>
+                <img class="d-block w-100 img-absolute img-hv80" src="assets/images/banner3.jpg" alt="First slide">
                 </mdb-carousel-item>
-                <mdb-carousel-item>
-                  <img class="d-block w-100 img-hv80" src="assets/images/del.jpg" alt="Second slide">
-                </mdb-carousel-item>
-                <mdb-carousel-item class="carousel-relative">
-                    <div class="bg-opacity"></div>
-                    <img class="d-block w-100 img-absolute img-hv80" src="assets/images/banner3.jpg" alt="First slide">
-                  </mdb-carousel-item>
-            </mdb-carousel>
-    
-            <div class="banner_text">
-                <h1 class="animate__animated animate__backInDown" style="font-size: 4rem;">
-                    <!-- Innovation. Excellence. Impact. -->
-                    <span style="color:yellowgreen">Innovation. </span> 
-                    <span style="color:#DF1995">Excellence. </span> 
-                    <span style="color:turquoise">Impact. </span> 
-                    <!-- Giving Your Idea Wings -->
-                    <!-- Empowering fast-growing and emerging businesses with Information Technology 
-                    Solutions -->
-                </h1>
-                <p class="animate__animated animate__backInUp" style="font-weight: 100; font-size: 18px;" >
-                    Empowering businesses and organizations with cutting-edge, world class solutions.
-                    <!-- Our competence and competitive strength in IT solutions lie in our 
-                    seasoned and well-qualified repertoire of professionals
-                </p> -->
-            </div>
+        </mdb-carousel>
+
+        <div class="banner_text">
+            <h1 class="animate__animated animate__backInDown" style="font-size: 4rem;">
+                <span style="color:yellowgreen">Innovation. </span> 
+                <span style="color:#DF1995">Excellence. </span> 
+                <span style="color:turquoise">Impact. </span> 
+            </h1>
+            <p class="animate__animated animate__backInUp" style="font-weight: 100; font-size: 18px;" >
+                Empowering businesses and organizations with cutting-edge, world class solutions.
+            </p>
         </div>
     </div>
-    
+</div>
+
+<div>
     <!-- Business process section -->
-    
     <div class="bus_div desktop">
         <div class="container">
             <div class="row">
@@ -81,7 +73,7 @@
     
     <div class="bus_div2 mobile" style="background-color: white;">
         <div class="animate__animated animate__backInRight">
-            <h1 style="font-size: 60px;">
+            <h1 style="font-size: 60px !important; padding-bottom: 20px !important;">
                 <span style="color: yellowgreen;">ALWAYS</span>
                  BUILDING 
                 <span style="color: turquoise;">TO SCALE</span>
@@ -219,39 +211,45 @@
     
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end">
-                    <div class="card" style="width: 25rem; margin-bottom: 10px;">
-                        <img src="assets/images/e-commerce.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h4 class="card-title text-center">eCommerce</h4>
-                            <p class="card-text text-center">
-                                Endear as Order Management System (OMS) increased backoffice operations 
-                                efficiency across online and brick and mortar stores.
-                            </p>
-                            <div class="d-flex justify-content-center">
-                                <button mdbBtn routerLink="/e-commerce" class="card_btn">Case Study</button>
-                                <button mdbBtn routerLink="/demo-request" class="card_btn demo">Demo</button>
+                    <ngui-inview>
+                        <div *ngIf>
+                            <div class="card animate__animated animate__backInLeft" style="width: 20rem; margin-bottom: 10px;">
+                            <img src="assets/images/e-commerce.jpg" class="card-img-top">
+                            <div class="card-body">
+                            <h4 class="card-title text-center">eCommerce</h4>
+                                <p class="card-text text-center">
+                                    Endear as Order Management System (OMS) increased backoffice operations 
+                                    efficiency across online, brick and mortar stores.
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <button mdbBtn routerLink="/e-commerce" class="card_button">Case Study</button>
+                                    <button mdbBtn routerLink="/demo-request" class="card_button demo">Demo</button>
+                                </div>
                             </div>
-                        
+                            </div>
                         </div>
-                      </div>
+                    </ngui-inview>
                 </div>
     
                   <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-start">
-                    <div class="card" style="width: 25rem; margin-bottom: 10px;">
-                        <img src="assets/images/aftersales-dark.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h4 class="card-title text-center">After-Sales Service</h4>
+                    <ngui-inview>
+                        <div *ngIf>
+                            <div class="card animate__animated animate__backInRight" style="width: 20rem; margin-bottom: 10px;">
+                            <img src="assets/images/aftersales-dark.jpg" class="card-img-top">
+                            <div class="card-body">
+                            <h4 class="card-title text-center">After-Sales Service</h4>
                             <p class="card-text text-center">
                                 Customer Experience improved greatly with ease of tracking support 
-                                ticket across stages and locations.
+                                ticket across stages and also accross locations.
                             </p>
-                            <div class="d-flex justify-content-center btn_div">
-                                <button mdbBtn routerLink="/after-sales" class="card_btn">Case Study</button>
-                                <button mdbBtn routerLink="/demo-request" class="card_btn demo">Demo</button>
+                            <div class="d-flex justify-content-center">
+                                <button mdbBtn routerLink="/after-sales" class="card_button">Case Study</button>
+                                <button mdbBtn routerLink="/demo-request" class="card_button demo">Demo</button>
                             </div>
-                   
-                        </div>
+                            </div>
                       </div>
+                        </div>
+                    </ngui-inview>
                   </div>
             </div>
         </div>
@@ -265,7 +263,7 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end">
             <div class="card" style="width: 25rem; margin-bottom: 10px;">
-                <img src="assets/images/e-commerce.jpg" class="card-img-top" alt="...">
+                <img src="assets/images/e-commerce.jpg" class="card-img-top">
                 <div class="card-body">
                     <h4 class="card-title text-center">eCommerce</h4>
                     <p class="card-text text-center">
@@ -283,7 +281,7 @@
     
         <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-start">
         <div class="card" style="width: 25rem; margin-bottom: 10px;">
-            <img src="assets/images/aftersales-dark.jpg" class="card-img-top" alt="...">
+            <img src="assets/images/aftersales-dark.jpg" class="card-img-top">
             <div class="card-body">
                 <h4 class="card-title text-center">After-Sales Service</h4>
                 <p class="card-text text-center">
@@ -300,40 +298,6 @@
         </div>
     
     </div>
-    
-    <!-- <div class="hv60">
-        <div class="container p-5 partners-padding">
-            <h3 class="d-flex justify-content-center mb-5" id="patners_text">Partners</h3>
-    
-              <mdb-carousel [animation]="'slide'" [isControls]="false">
-                <mdb-carousel-item>
-                    <div class="w-100 d-flex justify-content-center">
-    
-                        <img src="assets/images/ZinoxLogo.png" class="w-25 carousel_item">
-                        <img src="assets/images/kongaLogo.png" class="w-25 carousel_item middle_img_margin">
-                        <img src="assets/images/spring-xpress.png" class="w-25 carousel_item">
-                    </div>
-                </mdb-carousel-item>
-    
-                <mdb-carousel-item>
-                    <div class="w-100 d-flex justify-content-center">
-                        <img id="t4t-logo" src="assets/images/t4t-logo.png" class="w-25 carousel_item">
-                        <img id="td-logoz" src="assets/images/TDlogo.png" class="w-25 carousel_item middle_img_margin">
-                        <img src="assets/images/1st-news-logo.png" class="w-25 carousel_item"> 
-                    </div>
-                </mdb-carousel-item>
-                
-                <mdb-carousel-item>
-                    <div class="w-100 d-flex justify-content-center">
-                        <img id="options-logo" src="assets/images/optionsLogo.png" class=" carousel_item">
-                        <img src="assets/images/itec-logo.png" class=" carousel_item middle_img_margin">
-                        <img id="nbplc-logo" src="assets/images/nbplc-logo.png" class=" carousel_item">
-                    </div>
-                </mdb-carousel-item>
-              </mdb-carousel>
-    
-        </div>
-    </div> -->
     
     <div class="mini_div">
         <div class="col-md-12 col-sm-12 col-lg-12 text-center patner">

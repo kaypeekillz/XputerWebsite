@@ -1,11 +1,15 @@
 
 .demo-background {
-    background-image: url("../../../assets/images/form_background.jpg"); 
+    background-image: url("../../../assets/images/bac_img.jpg"); 
     background-color: #cccccc;
-    height: 80rem;
+    height: 72rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.the_label {
+    color: rgb(135, 129, 129);
 }
 
 .card {

@@ -1,42 +1,21 @@
-.foot {
-    background-color: #38425B !important;
+.footer_parent {
+    background-color: #38425B;
+    color: whitesmoke;
     padding: 50px;
-    font-size: 17px;
-    color: #fcfcfc;
 }
 
-.phone, .location, .envelope {
-    width: 50px;
-    height: 50px;
+.child {
+    padding: 20px;
 }
 
-#facebook_icon {
-    margin-left: 20px;
+.bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: center;
 }
 
-#twitter_icon {
-    margin-left: 10px;
-}
-
-#linkedin_icon {
-    margin-left: 10px;
-}
-
-#line {
-    width: auto;
-    background-color: #fcfcfc;
-    height: 1px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-#footer_box {
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-i {
-    margin-bottom: 10px;
+.icon {
+    padding: 10px;
+    color: whitesmoke;
 }
