@@ -8,11 +8,24 @@
     // overflow: hidden;
 }
 
+p {
+    font-size: 17px;
+    line-height: 2;
+}
+
+h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .text {
     padding: 200px; 
     z-index: 999;
     position: absolute;
     color: whitesmoke;
+    // font-family: "Roboto Condensed", sans-serif;
+    // font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .main_div {
@@ -35,12 +48,21 @@
 }
 
 .each_list {
-    padding: 10px;
+    padding-left: 10px;
     // margin: 0px !important;
 }
 
-.word {
+.word p {
     padding-left: 10px;
+    font-size: 14px;
+}
+
+.doYou {
+    font-weight: bold;
+}
+
+.our {
+    font-size: 16px;
 }
 
 .contact_btn {

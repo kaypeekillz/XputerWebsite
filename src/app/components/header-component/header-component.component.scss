@@ -1,3 +1,72 @@
+.dropbtn {
+  color: #38425B;
+  border: none !important;
+}
+
+#endear_btn {
+    border: none !important;
+}
+
+.dropbtn, a {
+    background-color: rgba(255,255,255,.1) !important;
+}
+
+#contact {
+    background-color: #38425B !important;
+    border-radius: 20px;
+    color: whitesmoke !important;
+    border: none !important;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 7px;
+     margin-left: 25px;
+    margin-right: 15px;
+}
+
+#contact:hover {
+    background-color: whitesmoke !important;
+    color: #38425B !important;
+    border: 2px solid #38425B !important;
+}
+
+.dropbtn {
+    outline: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: #38425B;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #38425B;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .top {
     background-color: #38425B;
     height: auto;
@@ -51,7 +120,10 @@
     font-size: 15px;
     font-family: Helvetica, Arial, sans-serif;
     color: #38425B;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: none;
     outline:none;
 }
@@ -63,7 +135,7 @@
 #home_btn:hover, #demo_btn:hover, #service_btn:hover, #endear_btn:hover, #contact_btn:hover {
     color: #38425B;
     border-bottom: 3px solid #38425B;
-    padding-bottom: 8px !important;
+    padding-bottom: 10px !important;
     margin: 0px;   
 }
 

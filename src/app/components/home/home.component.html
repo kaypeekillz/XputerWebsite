@@ -20,13 +20,13 @@
         </mdb-carousel>
 
         <div class="banner_text">
-            <h1 class="animate__animated animate__backInDown" style="font-size: 4rem;">
-                <span style="color:yellowgreen">Innovation. </span> 
-                <span style="color:#DF1995">Excellence. </span> 
-                <span style="color:turquoise">Impact. </span> 
+            <h1 class="animate__animated animate__backInDown" style="font-size: 3rem;">
+                <span style="color:yellowgreen; font-weight: 900;">Innovation. </span> 
+                <span style="color:#DF1995; font-weight: 900;">Excellence. </span> 
+                <span style="color:turquoise; font-weight: 900;">Impact. </span> 
             </h1>
             <p class="animate__animated animate__backInUp" style="font-weight: 100; font-size: 18px;" >
-                Empowering businesses and organizations with cutting-edge, world class solutions.
+                Empowering businesses and organizations with cutting-edge, world-class solutions.
             </p>
         </div>
     </div>
@@ -54,8 +54,8 @@
                         <div *ngIf> 
                             <div class="animate__animated animate__backInRight mt-3">
                                 <div>
-                                    <h3 >Business process automation is our core competence</h3>
-                                    <p>
+                                    <h3 class="heading">Business process automation is our core competence</h3>
+                                    <p class="info">
                                         For over 15 years we have dramatically improved the competetiveness of our 
                                         clients by focusing on workflow automation, system integration and analytics.
                                         We are perfectly positioned to undertake software projects of any form or 
@@ -81,7 +81,7 @@
         </div>
     
         <div id="sec_div_inner" class="bus_col animate__animated animate__backInLeft">
-            <h3 >Business process automation is our core competence</h3>
+            <h3 class="heading">Business process automation is our core competence</h3>
             <p>
                 For over 15 years we have dramatically improved the competetiveness of our 
                 clients by focusing on workflow automation, system integration and analytics.
@@ -97,31 +97,34 @@
     <div class="bus_div2 desktop">
         <div class="container">
             <div class="row">
-    
-                <ngui-inview class="col-md-6 col-sm-12 col-lg-6">
+
+            <ngui-inview class="col-md-6 col-sm-12 col-lg-6 ">
                     <div *ngIf> 
-                        <div class="animate__animated animate__backInLeft">
-                            <div class="m-3">
-                                <img src="assets/images/hands.jpg" class="img-resize">
-                            </div>
+                        <div class="animate__animated animate__backInRight mt-3">
+                            <h3 class="heading">Software Development</h3>
+                            <p class="info">
+                                Providing software tailored to individual client needs has proven to 
+                                be a walk in the park with our team of highly skilled and experienced 
+                                software engineers. Our team is seasoned and diverse, combining 
+                                world-class expertise in various technology stacks with wealth of 
+                                experience garnered over several years of building robust applications 
+                                across various industries. We are innovative, efficient and above 
+                                all driven. We stay on the curve of current technologies. That is why 
+                                our solutions are built on latest technology paradigms and universal best 
+                                practices. Our deep multi-industry knowledge and world-class technical 
+                                know-how sets us apart.
+                            </p>
+                            <button mdbBtn routerLink="/our-services" class="btn-clr2">More</button>
                         </div>
                     </div>
                 </ngui-inview>
     
-                <ngui-inview class="col-md-6 col-sm-12 col-lg-6 ">
+                <ngui-inview class="col-md-6 col-sm-12 col-lg-6">
                     <div *ngIf> 
-                        <div class="animate__animated animate__backInRight mt-3">
-                            <h3>Endear our Flagship Workflow Solution</h3>
-                            <p>
-                                Cohesion is a vital requirement of a business eager to meet its target 
-                                and achieve sustainable growth. Essential to a business of any appreciable 
-                                size are systems for defining, amending and enforcing business processes. 
-                                The operational arm that meets the business obligations is of great importance, 
-                                while the information flow within the operations team is also critical. 
-                                If these three factors fall out of sync, as they often do, profitability and 
-                                sustainable growth is greatly impacted.
-                            </p>
-                            <button mdbBtn routerLink="/endear-page" class="btn-clr2">Features</button>
+                        <div class="animate__animated animate__backInLeft d-flex justify-content-end">
+                            <div class="m-3">
+                                <img src="../../../assets/images/softwareTwo.jpg" class="img-resize">
+                            </div>
                         </div>
                     </div>
                 </ngui-inview>
@@ -133,17 +136,20 @@
     
     <div class="bus_div2 mobile">
         <div class="bus_col animate__animated animate__backInLeft">
-            <h3>Endear our Flagship Workflow Solution</h3>
+            <h3 class="heading">Software Development</h3>
             <p>
-                Cohesion is a vital requirement of a business eager to meet its target 
-                and achieve sustainable growth. Essential to a business of any appreciable 
-                size are systems for defining, amending and enforcing business processes. 
-                The operational arm that meets the business obligations is of great importance, 
-                while the information flow within the operations team is also critical. 
-                If these three factors fall out of sync, as they often do, profitability and 
-                sustainable growth is greatly impacted.
+                Providing software tailored to individual client needs has proven to 
+                be a walk in the park with our team of highly skilled and experienced 
+                software engineers. Our team is seasoned and diverse, combining 
+                world-class expertise in various technology stacks with wealth of 
+                experience garnered over several years of building robust applications 
+                across various industries. We are innovative, efficient and above 
+                all driven. We stay on the curve of current technologies. That is why 
+                our solutions are built on latest technology paradigms and universal best 
+                practices. Our deep multi-industry knowledge and world-class technical 
+                know-how sets us apart. 
             </p>
-            <button mdbBtn routerLink="/endear-page" class="btn-clr2">Features</button>
+            <button mdbBtn routerLink="/our-services" class="btn-clr2">More</button>
         </div> 
     </div>
     
@@ -151,7 +157,7 @@
     <div class="sys_div hv70 desktop">
         <div class="container">
             <div class="col-md-12 col-sm-12 text-center" id="flexible_system">
-                <h3>Flexible System Integration</h3>
+                <h3 class="heading">Flexible System Integration</h3>
                 <p>
                     Currently out-of-the-box, Endear integrates with sales processes on SAP B1,<br> 
                     Microsoft Dynamics AX 2012, Magento 2 and Dynamics 365.
@@ -178,7 +184,7 @@
     
     <div class="sys_div mobile">
         <div class="col-md-12 text-center" id="flexible_system">
-            <h3>Flexible System Integration</h3>
+            <h3 class="heading">Flexible System Integration</h3>
             <p>
                 Currently out-of-the-box, Endear integrates with sales processes on SAP B1,<br> 
                 Microsoft Dynamics AX 2012, Magento 2 and Dynamics 365.
@@ -205,7 +211,7 @@
     <div class="ind_div hv100 desktop" style="padding-top: 20px;" id="industriesCard">
         <div class="container">
             <div class="col-md-12 col-sm-12 text-center" id="Industries">
-                <h3>Industries Served</h3>
+                <h3 class="heading">Industries Served</h3>
                 <p>We have provided solutions for these industries and more.</p>
             </div>
     
@@ -223,7 +229,7 @@
                                 </p>
                                 <div class="d-flex justify-content-center">
                                     <button mdbBtn routerLink="/e-commerce" class="card_button">Case Study</button>
-                                    <button mdbBtn routerLink="/demo-request" class="card_button demo">Demo</button>
+                                    <!-- <button mdbBtn routerLink="/demo-request" class="card_button demo">Demo</button> -->
                                 </div>
                             </div>
                             </div>
@@ -244,7 +250,7 @@
                             </p>
                             <div class="d-flex justify-content-center">
                                 <button mdbBtn routerLink="/after-sales" class="card_button">Case Study</button>
-                                <button mdbBtn routerLink="/demo-request" class="card_button demo">Demo</button>
+                                <!-- <button mdbBtn routerLink="/demo-request" class="card_button demo">Demo</button> -->
                             </div>
                             </div>
                       </div>
@@ -258,7 +264,7 @@
     
     <div class="ind_div hv100 mobile" id="industriesCard">
         <div class="text-center" id="Industries">
-            <h3>Industries Served</h3>
+            <h3 class="heading">Industries Served</h3>
             <p>We have provided solutions for these industries and more.</p>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end">
@@ -272,7 +278,7 @@
                     </p>
                     <div class="d-flex justify-content-center">
                         <button mdbBtn routerLink="/e-commerce" class="btn-clr1">Case Study</button>
-                        <button mdbBtn routerLink="/demo-request" class="btn-clr1" id="demo_btn1">Demo</button>
+                        <!-- <button mdbBtn routerLink="/demo-request" class="btn-clr1" id="demo_btn1">Demo</button> -->
                     </div>
                 
                 </div>
@@ -290,7 +296,7 @@
                 </p>
                 <div class="d-flex justify-content-center">
                     <button mdbBtn routerLink="/after-sales" class="btn-clr1">Case Study</button>
-                    <button mdbBtn routerLink="/demo-request" class="btn-clr1" id="demo_btn1">Demo</button>
+                    <!-- <button mdbBtn routerLink="/demo-request" class="btn-clr1" id="demo_btn1">Demo</button> -->
                 </div>
         
             </div>
@@ -301,7 +307,7 @@
     
     <div class="mini_div">
         <div class="col-md-12 col-sm-12 col-lg-12 text-center patner">
-            <h3>Our Partners</h3>
+            <h3 class="heading">Our Partners</h3>
             <p>Here are some of the organisations we have a strong relationship with.</p>
         </div>
         <div class="row">

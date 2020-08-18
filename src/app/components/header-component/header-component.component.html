@@ -2,11 +2,11 @@
   <div class="container-fluid top">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-12 col-xs-12 col-lg-2">
+        <div class="col-md-2 col-sm-12 col-xs-12 col-lg-2">
           <p>Giving your idea wings</p>
         </div>
 
-        <div class="col-md-2 col-sm-12 col-xs-12 col-lg-3">
+        <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
         </div>
 
         <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
@@ -16,7 +16,8 @@
           <div class="row">
               <div class="row phone">
                 <i class="fas fa-phone phone_icon fa-2x"></i>
-                <div class="val">+234 (0) 802 397 0205</div>
+                <!-- <div class="val">+234 (0) 802 397 0205</div> -->
+                <div class="val">+234 (0) 806 678 3130</div>
               </div>
               <div class="row">
                 <i class="far fa-envelope fa-2x"></i>
@@ -45,16 +46,22 @@
             <a id="home_btn" class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a routerLink="/endear-page" id="endear_btn" class="nav-link waves-light" mdbWavesEffect>Endear</a>
+            <!-- <a routerLink="/endear-page" id="endear_btn" class="nav-link waves-light" mdbWavesEffect>Products</a> -->
+            <div id="endear_btn" class="nav-link waves-light dropdown">
+              <button class="dropbtn">Products <i style="color: #38425B;" class="fas fa-angle-down"></i></button>
+              <div class="dropdown-content">
+                <a routerLink="/endear-page">Endear</a>
+              </div>
+            </div>
           </li>
-          <li class="nav-item active">
+          <!-- <li class="nav-item active">
             <a href="#industriesCard" id="demo_btn" class="nav-link waves-light" mdbWavesEffect>Request Demo</a>
-          </li>
+          </li> -->
           <li class="nav-item active">
             <a routerLink="/our-services" id="service_btn" class="nav-link waves-light" mdbWavesEffect>Services</a>
           </li>
           <li class="nav-item active">
-            <a routerLink="/contact-us" id="contact_btn" class="nav-link waves-light" mdbWavesEffect>Contact Us</a>
+            <a routerLink="/contact-us" id="contact" class="nav-link waves-light" mdbWavesEffect>Contact Us</a>
           </li>
         </ul>
     </links>

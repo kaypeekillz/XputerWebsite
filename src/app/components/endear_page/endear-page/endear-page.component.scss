@@ -1,6 +1,30 @@
+.float{
+	position:fixed;
+	width:150px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#38425B;
+	color:whitesmoke;
+	border-radius:50px;
+	text-align:center;
+	// box-shadow: 2px 2px 3px #999;
+    outline: none;
+    // border: 1px solid #999;
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    z-index: 1;
+}
+
 .img {
     width: 100%;
     height: 95vh;
+}
+
+.the_icon {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
 }
 
 .banner_text {
@@ -27,8 +51,12 @@ button {
 }
 
 #graphWorkFlow {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+}
+
+.bottom_text {
+    font-size: 14px;
 }
 
 .endear {
