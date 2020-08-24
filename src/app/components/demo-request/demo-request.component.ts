@@ -1,6 +1,10 @@
+import { Demo } from './../../models/demo';
+import { DemoService } from './../../services/demo/demo.service';
+import { Router, RouterLink } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Contact } from 'src/app/models/contact';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-demo-request',
@@ -8,14 +12,18 @@ import { Contact } from 'src/app/models/contact';
   styleUrls: ['./demo-request.component.scss']
 })
 export class DemoRequestComponent implements OnInit {
-  contact: Contact
+  demo: Demo
+  isLoading = false;
 
-  constructor() { }
+  constructor(
+    private router: Router, 
+    private toastr: ToastrService,
+    private demoService: DemoService, ) { }
 
   ngOnInit(): void {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    this.contact = new Contact()
+    this.demo = new Demo()
   }
 
   demoForm = new FormGroup({
@@ -36,8 +44,27 @@ export class DemoRequestComponent implements OnInit {
     console.log(`Resolved captcha with response: ${captchaResponse}`);
   }
 
-  sendRequest() {
-    console.log('I was clicked!');
+  send(values: any) {
+    this.demoService.sendDemo(values).subscribe((res) => {
+        // this.toastr.success("Message Sent Successfully");
+        this.demo.Name = "";
+        this.demo.Email = "";
+        this.demo.Address = "";
+        this.demo.Industry = "";
+        this.demo.Title = "";
+        this.demo.Message = "";
+        this.demo.Phone = "";
+        this.isLoading = false
+        this.router.navigate(['/demo-success']);
+    },
+    (error) => {
+      this.toastr.error("Something went wrong");
+      this.isLoading = false;
+    })
+  }
+
+  toggleLoading = () => {
+    this.isLoading = true;
   }
 
 }

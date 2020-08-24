@@ -1,0 +1,37 @@
+.req {
+    color: lightgreen;
+}
+
+.main {
+    margin-top: 150px;
+    padding: 50px 50px 100px 50px;
+}
+
+.continue {
+    color: whitesmoke;
+    background-color: #38425B;
+    border-radius: 30px;
+}
+
+.continue:hover {
+    background-color: whitesmoke;
+    color: #38425B;
+}
+
+.we_text {
+    color: #38425B;
+}
+
+@media (min-width: 992px) and (hover: none) {
+    .main {
+        height: 55vh;
+        padding-top: 200px !important;
+    }
+}
+
+ @media (min-width: 768px) and (max-width: 991px) {
+     .main {
+        height: 55vh;
+        padding-top: 150px !important;
+    }
+ }

@@ -1,9 +1,9 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-sm-12 col-lg-8">
+        <div class="col-md-8 col-sm-12 col-xs-12 col-lg-8">
             <form class="text-center p-5" [formGroup]="contactForm">
-                <h3 class="h4 mb-4" style="text-align: left; font-weight: bold;">GET IN TOUCH</h3>
-                <div class="form-row mb-4">
+                <h3 class="mt-4" style="text-align: left; font-weight: 700;">GET IN TOUCH</h3>
+                <div class="form-row mb-4 mt-4">
                     <div class="col md-form name">
                         <input mdbInput [(ngModel)]="contact.Name" formControlName="name" name="name" type="text" id="form1" class="form-control">
                         <label for="form1" class="label">Name</label>
@@ -22,12 +22,12 @@
 
                 <div class="form-row mb-4" style="margin-top: 0px !important;">
                     <div class="col md-form phone">
-                        <input mdbInput formControlName="phone" [(ngModel)]="contact.Phone" name="phone" type="text" id="form1" class="form-control">
+                        <input mdbInput maxlength="11" formControlName="phone" [(ngModel)]="contact.Phone" name="phone" type="text" id="form1" class="form-control">
                         <label for="form1" class="label">Phone</label>
                     </div>
 
                     <div class="col md-form subject">
-                        <input mdbInput formControlName="subject" [(ngModel)]="contact.Subject" name="subject" type="text" id="form1" class="form-control">
+                        <input mdbInput maxlength="40" formControlName="subject" [(ngModel)]="contact.Subject" name="subject" type="text" id="form1" class="form-control">
                         <label for="form1" class="label">Subject</label>
                     </div>
                 </div>
@@ -37,12 +37,15 @@
                     <label for="form75">Message</label>
                 </div>
                 <div class="send_btn">
-                    <button mdbBtn [disabled]="!contactForm.valid" (click)="send(contact)">Send</button>
+                    <button [disabled]="isLoading" mdbBtn [disabled]="!contactForm.valid" (click)="send(contact)" (click)="toggleLoading()">
+                        <img *ngIf="isLoading" style="width: 24px; padding-right: 10px;" src="../../../assets/images/loaderTwo.gif" >
+                        Send
+                    </button>
                 </div>
             </form>
         </div>
 
-        <div class="col-md-4 col-sm-12 col-lg-4 cards_top">
+        <div class="col-md-4 col-sm-12 col-lg-4 col-xs-12 cards_top">
             <!-- PHONE -->
             <div class="contact_card row">
                 <div style="padding: 10px;">

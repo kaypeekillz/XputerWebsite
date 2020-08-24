@@ -32,6 +32,7 @@
     text-align: center;
     top: 200px;
     left: 50%;
+    font-weight: 600;
     transform: translate(-50%, -50%);
 }
 
@@ -89,8 +90,9 @@
         color: whitesmoke;
         position: absolute;
         text-align: center;
-        top: 150px;
+        top: 220px;
         left: 50%;
+        font-weight: 600;
         transform: translate(-50%, -50%);
     }
 
@@ -162,4 +164,14 @@
         transform: translate(-50%, -50%);
     }
 
+}
+
+@media (min-width: 992px) and (hover: none) {
+    .img {
+        height: 50vh;
+    }
+
+    .demo_btn {
+        left: 65%;
+    }
 }

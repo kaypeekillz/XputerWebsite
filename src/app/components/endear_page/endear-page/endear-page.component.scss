@@ -1,16 +1,14 @@
 .float{
-	position:fixed;
-	width:150px;
-	height:60px;
-	bottom:40px;
-	right:40px;
+	position: fixed;
+	width: 150px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
 	background-color:#38425B;
-	color:whitesmoke;
-	border-radius:50px;
+	color: whitesmoke;
+	border-radius: 50px;
 	text-align:center;
-	// box-shadow: 2px 2px 3px #999;
     outline: none;
-    // border: 1px solid #999;
     border: none;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     z-index: 1;
@@ -89,6 +87,11 @@ p {
     font-size: 20px;
 }
 
+.photo {
+    width: 100%;
+    height: 95vh;
+}
+
 
 @media screen and (max-width: 767px) {
     .mobile {
@@ -114,14 +117,14 @@ p {
         color: whitesmoke;
         position: absolute;
         // text-align: center;
-        top: 35%;
+        top: 40%;
         left: 35%;
         transform: translate(-25%, -25%);
     }
 
     #image {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
         justify-content: center;
     }
 
@@ -153,6 +156,15 @@ p {
         width: 100%;
         height: auto;
     }
+
+    .endear {
+        width: 80px !important; 
+        height: 90px !important;
+    }
+
+    .photo {
+        height: 80vh;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) { 
@@ -161,7 +173,7 @@ p {
     }
 
     .img {
-        height: 70vh;
+        height: 80vh;
     }
 
     .banner_text {
@@ -169,8 +181,8 @@ p {
     }
 
     .endear {
-        width: 100px; 
-        height: 100px;
+        width: 50px !important; 
+        height: 50px !important;
     }
 
     .graph {
@@ -193,4 +205,34 @@ p {
         font-size: 16px;
     }
 
+    .banner_text {
+        color: whitesmoke;
+        position: absolute;
+        text-align: center;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .photo {
+         height: 70vh !important;
+     }
+
+ }
+
+ @media (min-width: 992px) and (hover: none) {
+     .photo {
+         height: 60vh !important;
+     }
+     
+     .banner_text {
+        color: whitesmoke;
+        position: absolute;
+        text-align: center;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: Helvetica, Arial, sans-serif;
+    }
  }

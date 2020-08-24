@@ -11,6 +11,7 @@ import { ToastrService } from "ngx-toastr";
 })
 export class ContactComponent implements OnInit {
   contact: Contact;
+  isLoading = false;
 
   constructor(
     private contactService: ContactService, 
@@ -35,7 +36,6 @@ export class ContactComponent implements OnInit {
   get controlsForm() { return this.contactForm.controls; }
 
   send(values: any) {
-    // console.log(values);
     this.contactService.sendMail(values).subscribe((res) => {
         this.toastr.success("Message Sent Successfully");
         this.contact.Name = "";
@@ -43,16 +43,17 @@ export class ContactComponent implements OnInit {
         this.contact.Subject = "";
         this.contact.Message = "";
         this.contact.Phone = "";
+        this.isLoading = false
     },
     (error) => {
       // this.toastr.error(error.Message, error.Title);
-      this.toastr.error("Message not Sent");
-      this.contact.Name = "";
-        this.contact.Email = "";
-        this.contact.Subject = "";
-        this.contact.Message = "";
-        this.contact.Phone = "";
+      this.toastr.error("Something went wrong");
+      this.isLoading = false;
     })
+  }
+
+  toggleLoading = () => {
+    this.isLoading = true;
   }
 
 }

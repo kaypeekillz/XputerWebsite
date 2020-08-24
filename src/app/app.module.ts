@@ -2,8 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-// import { mdb-card}
-// MDB Angular Pro
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AppComponent } from './app.component';
 import { HeaderComponentComponent } from './components/header-component/header-component.component';
@@ -22,6 +20,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
 import { ToastrModule } from "ngx-toastr";
+import { DemoSuccessComponent } from './components/demo-success/demo-success.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +34,8 @@ import { ToastrModule } from "ngx-toastr";
     ECommerceComponent,
     AfterSalesComponent,
     ContactComponent,
-    ServicesComponent
+    ServicesComponent,
+    DemoSuccessComponent
   ],
   imports: [
     BrowserAnimationsModule,

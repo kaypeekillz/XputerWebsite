@@ -1,105 +1,77 @@
-<div [ngClass]="{hidelater: showfirst}" class="hv800 animate__animated animate__swing">
-    <img src="assets/images/second_logo.png" class="logo">
-    <h2 class="texts">Giving your idea wings</h2>
-</div>
+    <!-- <div class="hv800 col-md-12 col-sm-12 col-lg-12 col-xs-12 animate__animated animate__swing"> -->
+    <div [ngClass]="{hidelater: showfirst}" *ngIf="noView" class="hv800 col-md-12 col-sm-12 col-lg-12 col-xs-12 animate__animated animate__swing">
+        <img src="assets/images/second_logo.png" class="logo">
+        <h2 class="texts">Giving your idea wings</h2>
+    </div>
 
-<div class="banner" [ngClass]="{hidefirst: showlater}">
-    <div>
-        <mdb-carousel [animation]="'slide'">
-            <mdb-carousel-item class="carousel-relative">
-                <div class="bg-opacity"></div>
-                <img class="d-block w-100 img-absolute img-hv80" src="assets/images/banner1.jpg" alt="First slide">
-            </mdb-carousel-item>
-            <mdb-carousel-item>
-                <img class="d-block w-100 img-hv80" src="assets/images/del.jpg" alt="Second slide">
-            </mdb-carousel-item>
-            <mdb-carousel-item class="carousel-relative">
-                <div class="bg-opacity"></div>
-                <img class="d-block w-100 img-absolute img-hv80" src="assets/images/banner3.jpg" alt="First slide">
+    <!-- <div style="display: none;"> -->
+    <div class="banner" *ngIf="mainBanner" [ngClass]="{hidefirst: showlater}">
+        <div>
+            <mdb-carousel [animation]="'slide'">
+                <mdb-carousel-item class="carousel-relative">
+                    <div class="bg-opacity"></div>
+                    <img class="d-block w-100 img-absolute img-hv80" src="assets/images/banner1.jpg" alt="First slide">
                 </mdb-carousel-item>
-        </mdb-carousel>
+                <mdb-carousel-item>
+                    <img class="d-block w-100 img-hv80" src="assets/images/del.jpg" alt="Second slide">
+                </mdb-carousel-item>
+                <mdb-carousel-item class="carousel-relative">
+                    <div class="bg-opacity"></div>
+                    <img class="d-block w-100 img-absolute img-hv80" src="assets/images/banner3.jpg" alt="First slide">
+                    </mdb-carousel-item>
+            </mdb-carousel>
 
-        <div class="banner_text">
-            <h1 class="animate__animated animate__backInDown" style="font-size: 3rem;">
-                <span style="color:yellowgreen; font-weight: 900;">Innovation. </span> 
-                <span style="color:#DF1995; font-weight: 900;">Excellence. </span> 
-                <span style="color:turquoise; font-weight: 900;">Impact. </span> 
-            </h1>
-            <p class="animate__animated animate__backInUp" style="font-weight: 100; font-size: 18px;" >
-                Empowering businesses and organizations with cutting-edge, world-class solutions.
-            </p>
-        </div>
-    </div>
-</div>
-
-<div>
-    <!-- Business process section -->
-    <div class="bus_div desktop">
-        <div class="container">
-            <div class="row">
-                    <ngui-inview class="col-md-6 col-sm-12 col-lg-6">
-                        <div *ngIf> 
-                            <div class="animate__animated animate__backInLeft">
-                                <h1 class="building">
-                                    <span style="color: yellowgreen;">ALWAYS</span>
-                                     BUILDING 
-                                    <span style="color: turquoise;">TO SCALE</span>
-                                    <!-- TO SCALE -->
-                                </h1>
-                            </div>
-                        </div>
-                    </ngui-inview>
-    
-                    <ngui-inview class="col-md-6 col-sm-12 col-lg-6">
-                        <div *ngIf> 
-                            <div class="animate__animated animate__backInRight mt-3">
-                                <div>
-                                    <h3 class="heading">Business process automation is our core competence</h3>
-                                    <p class="info">
-                                        For over 15 years we have dramatically improved the competetiveness of our 
-                                        clients by focusing on workflow automation, system integration and analytics.
-                                        We are perfectly positioned to undertake software projects of any form or 
-                                        magnitude, all developed to world-class standards and benchmarks.
-                                    </p>
-                                    <button mdbBtn routerLink="/contact-us" class="btn-clr">Contact Us</button>
-                                </div>
-                            </div>
-                        </div>
-                    </ngui-inview>
+            <div class="banner_text">
+                <h1 class="animate__animated animate__backInDown" style="font-size: 3rem;">
+                    <span style="color:yellowgreen; font-weight: 900;">Innovation. </span> 
+                    <span style="color:#DF1995; font-weight: 900;">Excellence. </span> 
+                    <span style="color:turquoise; font-weight: 900;">Impact. </span> 
+                </h1>
+                <p class="animate__animated animate__backInUp empower" style="font-weight: 100; font-size: 18px;" >
+                    Empowering businesses and organizations with cutting-edge, world-class solutions.
+                </p>
             </div>
-        
         </div>
     </div>
     
-    <div class="bus_div2 mobile" style="background-color: white;">
-        <div class="animate__animated animate__backInRight">
-            <h1 style="font-size: 60px !important; padding-bottom: 20px !important;">
-                <span style="color: yellowgreen;">ALWAYS</span>
-                 BUILDING 
-                <span style="color: turquoise;">TO SCALE</span>
-            </h1>
+    <div class="container bis_div">
+        <div class="row">
+                <ngui-inview class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+                    <div *ngIf> 
+                        <div class="animate__animated animate__backInLeft">
+                            <h1 class="build_text">
+                                <span style="color: yellowgreen;">ALWAYS</span>
+                                    BUILDING 
+                                <span style="color: turquoise;">TO SCALE</span>
+                            </h1>
+                        </div>
+                    </div>
+                </ngui-inview>
+
+                <ngui-inview class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+                    <div *ngIf> 
+                        <div class="animate__animated animate__backInRight mt-3">
+                            <div class="justify-content-center">
+                                <h3 class="heading">Business process automation is our core competence</h3>
+                                <p class="info">
+                                    For over 15 years we have dramatically improved the competetiveness of our 
+                                    clients by focusing on workflow automation, system integration and analytics.
+                                    We are perfectly positioned to undertake software projects of any form or 
+                                    magnitude, all developed to world-class standards and benchmarks.
+                                </p>
+                                <!-- <button mdbBtn routerLink="/contact-us" class="btn-clr">Contact Us</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </ngui-inview>
         </div>
-    
-        <div id="sec_div_inner" class="bus_col animate__animated animate__backInLeft">
-            <h3 class="heading">Business process automation is our core competence</h3>
-            <p>
-                For over 15 years we have dramatically improved the competetiveness of our 
-                clients by focusing on workflow automation, system integration and analytics.
-                We are perfectly positioned to undertake software projects of any form or 
-                magnitude, all developed to world-class standards and benchmarks.
-            </p>
-            <button mdbBtn routerLink="contact-us" class="btn-clr2">Contact Us</button>
-        </div> 
     </div>
-    
-    <!-- Flagship Workflow section -->
-    
-    <div class="bus_div2 desktop">
+
+    <div class="bus_div2">
         <div class="container">
             <div class="row">
-
-            <ngui-inview class="col-md-6 col-sm-12 col-lg-6 ">
-                    <div *ngIf> 
+                <ngui-inview class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+                    <div *ngIf>
                         <div class="animate__animated animate__backInRight mt-3">
                             <h3 class="heading">Software Development</h3>
                             <p class="info">
@@ -119,91 +91,51 @@
                     </div>
                 </ngui-inview>
     
-                <ngui-inview class="col-md-6 col-sm-12 col-lg-6">
+                <ngui-inview class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
                     <div *ngIf> 
-                        <div class="animate__animated animate__backInLeft d-flex justify-content-end">
-                            <div class="m-3">
+                        <div class="animate__animated animate__backInLeft">
+                            <div class="m-3 d-flex justify-content-center">
                                 <img src="../../../assets/images/softwareTwo.jpg" class="img-resize">
                             </div>
                         </div>
                     </div>
                 </ngui-inview>
-                
             </div>
-        
         </div>
     </div>
+
+<div>
+
     
-    <div class="bus_div2 mobile">
-        <div class="bus_col animate__animated animate__backInLeft">
-            <h3 class="heading">Software Development</h3>
-            <p>
-                Providing software tailored to individual client needs has proven to 
-                be a walk in the park with our team of highly skilled and experienced 
-                software engineers. Our team is seasoned and diverse, combining 
-                world-class expertise in various technology stacks with wealth of 
-                experience garnered over several years of building robust applications 
-                across various industries. We are innovative, efficient and above 
-                all driven. We stay on the curve of current technologies. That is why 
-                our solutions are built on latest technology paradigms and universal best 
-                practices. Our deep multi-industry knowledge and world-class technical 
-                know-how sets us apart. 
-            </p>
-            <button mdbBtn routerLink="/our-services" class="btn-clr2">More</button>
-        </div> 
-    </div>
-    
-    
-    <div class="sys_div hv70 desktop">
+    <div class="hv70 flexible_system">
         <div class="container">
-            <div class="col-md-12 col-sm-12 text-center" id="flexible_system">
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center">
                 <h3 class="heading">Flexible System Integration</h3>
-                <p>
+                <p class="mb-5">
                     Currently out-of-the-box, Endear integrates with sales processes on SAP B1,<br> 
                     Microsoft Dynamics AX 2012, Magento 2 and Dynamics 365.
                 </p>
             </div>
-    
-            <div class="row">
-                <div class="col-md-3 col-sm-6 d-flex justify-content-center">
-                    <img src="assets/images/ax2012.png" id="ax_logo">
+
+            <ngui-inview>
+                <div *ngIf>
+                    <div class="row">
+                        <div class="animate__animated animate__flipInX col-md-3 col-sm-6 col-xs-6 col-lg-3 d-flex justify-content-center mb-5">
+                            <img src="assets/images/ax2012.png" id="ax_logo">
+                        </div>
+                        <div class="animate__animated animate__flipInX col-md-3 col-sm-6 col-xs-6 col-lg-3 d-flex justify-content-center">
+                            <img src="assets/images/yes.png" id="d365_logo">
+                        </div>
+                        <div class="animate__animated animate__flipInX col-md-3 col-sm-6 col-xs-6 col-lg-3 d-flex justify-content-center mb-5">
+                            <img src="assets/images/sap_logo.png" id="sap_logo">
+                        </div>
+                        <div class="animate__animated animate__flipInX col-md-3 col-sm-6 col-xs-6 col-lg-3 d-flex justify-content-center mb-5">
+                            <img src="assets/images/MagentoLogo.png" id="magento_logo">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 col-sm-6 d-flex justify-content-center">
-                    <img src="assets/images/yes.png" id="d365_logo">
-                </div>
-                <div class="col-md-3 col-sm-6 d-flex justify-content-center">
-                    <img src="assets/images/sap_logo.png" id="sap_logo">
-                </div>
-                <div class="col-md-3 col-sm-6 d-flex justify-content-center">
-                    <img src="assets/images/MagentoLogo.png" id="magento_logo">
-                </div>
-            </div>
+            </ngui-inview>
         </div>
-    
-    </div>
-    
-    <div class="sys_div mobile">
-        <div class="col-md-12 text-center" id="flexible_system">
-            <h3 class="heading">Flexible System Integration</h3>
-            <p>
-                Currently out-of-the-box, Endear integrates with sales processes on SAP B1,<br> 
-                Microsoft Dynamics AX 2012, Magento 2 and Dynamics 365.
-            </p>
-        </div>
-    
-        <div class="col-md-12  d-flex justify-content-center pb-2">
-            <img src="assets/images/ax2012.png" id="ax_logo">
-        </div>
-        <div class="col-md-12 d-flex justify-content-center pt-3">
-            <img src="assets/images/yes.png" id="d365_logo">
-        </div>
-        <div class="col-md-12 d-flex justify-content-center p-2">
-            <img src="assets/images/sap_logo.png" id="sap_logo">
-        </div>
-        <div class="col-md-12 d-flex justify-content-center p-4">
-            <img src="assets/images/MagentoLogo.png" id="magento_logo">
-        </div>
-    
     </div>
     
     <!-- Industries served section -->
@@ -220,7 +152,7 @@
                     <ngui-inview>
                         <div *ngIf>
                             <div class="card animate__animated animate__backInLeft" style="width: 20rem; margin-bottom: 10px;">
-                            <img src="assets/images/e-commerce.jpg" class="card-img-top">
+                                <img src="assets/images/e-commerce.jpg" class="card-img-top">
                             <div class="card-body">
                             <h4 class="card-title text-center">eCommerce</h4>
                                 <p class="card-text text-center">
@@ -306,59 +238,61 @@
     </div>
     
     <div class="mini_div">
-        <div class="col-md-12 col-sm-12 col-lg-12 text-center patner">
-            <h3 class="heading">Our Partners</h3>
-            <p>Here are some of the organisations we have a strong relationship with.</p>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 carding">
-              <div class="card card-body">
-                <img src="assets/images/ZinoxLogo.png" class="pat_logo">
-              </div>
+        <div class="inner_mini">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 text-center patner">
+                <h3 class="heading">Our Partners</h3>
+                <p>Here are some of the organisations we have a strong relationship with.</p>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 carding">
-                <div class="card card-body">
-                    <img src="assets/images/kongaLogo.png" class="pat_logo">
+            <div class="row major d-flex justify-content-center">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 carding">
+                    <div class="card card-body">
+                        <img src="assets/images/ZinoxLogo.png" class="pat_logo">
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-3 carding">
-                <div class="card card-body">
-                    <img src="assets/images/spring-xpress.png" class="pat_logo">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 carding">
+                    <div class="card card-body">
+                        <img src="assets/images/kongaLogo.png" class="pat_logo">
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-3 carding">
-                <div class="card card-body">
-                    <img id="t4t-logo" src="assets/images/t4t-logo.png" class="pat_logo">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 carding">
+                    <div class="card card-body">
+                        <img src="assets/images/spring-xpress.png" class="pat_logo p-1">
+                    </div>
                 </div>
-              </div>
-    
-        </div>
-        <!-- SECOND LINE OF PATENERS -->
-    
-        <div class="row second_row">
-            <div class="col-lg-3 col-md-3 col-sm-3 carding">
-              <div class="card card-body">
-                <img src="assets/images/TDlogo.png" class="pat_logo">
-              </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 carding">
+                    <div class="card card-body">
+                        <img id="t4t-logo" src="assets/images/t4t-logo.png" class="pat_logo">
+                    </div>
+                </div>
+        
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 carding">
-                <div class="card card-body">
-                    <img src="assets/images/1st-news-logo.png" class="pat_logo"> 
+            <!-- SECOND LINE OF PATENERS -->
+        
+            <div class="row second_row major d-flex justify-content-center" style="margin-top: 40px !important;">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 carding">
+                    <div class="card card-body">
+                        <img src="assets/images/TDlogo.png" class="pat_logo">
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-3 carding">
-                <div class="card card-body">
-                    <img id="nbplc-logo" src="assets/images/nbplc-logo.png" class="pat_logo">
-                    <!-- <img id="options-logo" src="assets/images/optionsLogo.png"> -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 carding">
+                    <div class="card card-body">
+                        <img src="assets/images/1st-news-logo.png" class="pat_logo"> 
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-3 carding">
-                <div class="card card-body">
-                    <img src="assets/images/itec-logo.png" class="pat_logo">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 carding">
+                    <div class="card card-body">
+                        <img id="nbplc-logo" src="assets/images/nbplc-logo.png" class="pat_logo">
+                        <!-- <img id="options-logo" src="assets/images/optionsLogo.png"> -->
+                    </div>
                 </div>
-              </div>
-    
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 carding">
+                    <div class="card card-body">
+                        <img src="assets/images/itec-logo.png" class="pat_logo">
+                    </div>
+                </div>
+        
+            </div>
         </div>
-    
     </div>
+
 </div>
