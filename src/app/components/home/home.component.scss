@@ -557,6 +557,10 @@ div.bg-opacity {
         align-items: center;
     }
 
+    .industry_card {
+        width: 20rem !important;
+    }
+
 
  }
 
@@ -568,6 +572,10 @@ div.bg-opacity {
      .empower {
          font-size: 12px !important;
      }
+
+     .industry_card {
+        width: 20rem !important;
+    }
  }
 
  @media (min-width: 768px) and (max-width: 991px) { 
@@ -611,6 +619,10 @@ div.bg-opacity {
 
     .mini_div {
         min-height: 40vh;
+    }
+
+    .industry_card {
+        width: 20rem !important;
     }
 
  }
