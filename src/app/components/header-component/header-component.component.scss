@@ -151,4 +151,33 @@
      p {
          font-size: 13px !important;
      }
+
+     .info {
+         display: none;
+     }
+
+     .empty {
+         display: none;
+     }
+
+     .prod_b {
+         text-align: start !important;
+         padding: 0 !important;
+     }
+
+     #service_btn {
+         font-weight: bold;
+     }
+
+     #home_btn {
+         font-weight: bold;
+     }
+
+     .prod_b {
+         font-weight: bold;
+     }
+     
+     #contact {
+         margin-right: 20px !important;
+     }
  }
